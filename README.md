@@ -1,1 +1,5 @@
-# hra-vocab
+# Human Reference Atlas Vocabulary
+
+The purpose of this repository is to manage and update the development of the Human Reference Atlas vocabulary. This vocabulary serves as a universal resource to ensure the standardization of concept names across the HuBMAP project. By maintaining and curating the contents of this repository, we aim to provide a consistent and widely accepted set of terms and definitions, facilitating seamless communication and understanding across various fields and disciplines.
+
+At the moment, the existing vocabulary comprises a single instance, which takes the form of a value set. To access this value set and its corresponding source file, you can find it at the following link: https://docs.google.com/spreadsheets/d/1wNprn3Zr-zHWt-ysaTEZ1yWBCqhEU6gTzv1H1xdCGdk/edit?usp=sharing.

@@ -1,0 +1,4157 @@
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix loinc: <http://purl.bioontology.org/ontology/LNC/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix rrid: <https://identifiers.org/RRID:> .
+@prefix efo: <http://www.ebi.ac.uk/efo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix vs: <https://purl.humanatlas.io/vocab/hravs#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+
+<https://purl.humanatlas.io/vocab/hravs> a skos:ConceptScheme;
+  dct:title "Human Reference Atlas Value Set"@en;
+  dct:description "The value set for the Human Reference Atlas metadata records as part of the Human BioMolecular Atlas Program (HuBMAP) (https://hubmapconsortium.org)"@en;
+  skos:hasTopConcept vs:HRAVS_0000001, vs:HRAVS_0000042, vs:HRAVS_0000002, vs:HRAVS_0000003,
+    vs:HRAVS_0000004, vs:HRAVS_0000005, vs:HRAVS_0000006, vs:HRAVS_0000035, vs:HRAVS_0000007,
+    vs:HRAVS_0000008, vs:HRAVS_0000009, vs:HRAVS_0000010, vs:HRAVS_0000011, vs:HRAVS_0000012,
+    vs:HRAVS_0000013, vs:HRAVS_0000014, vs:HRAVS_0000015, vs:HRAVS_0000016, vs:HRAVS_0000017 .
+
+vs:HRAVS_0000001 a skos:Concept;
+  skos:prefLabel "Analyte"@en;
+  skos:definition "This is a set of controlled terms for analytes."@en;
+  skos:notation "HRAVS:0000001";
+  skos:narrower ncit:C449, ncit:C812, ncit:C17021, ncit:C735, ncit:C616, ncit:C61154,
+    ncit:C13201, obo:CHEBI_18154, obo:CHEBI_51217, vs:HRAVS_0000131, obo:CHEBI_59520;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C449 a skos:Concept;
+  skos:prefLabel "DNA"@en;
+  skos:definition "A long linear double-stranded polymer formed from nucleotides attached to a deoxyribose backbone and found in the nucleus of a cell; associated with the transmission of genetic information."@en;
+  rdfs:label "DNA"@en;
+  skos:broader vs:HRAVS_0000001;
+  skos:notation "C449";
+  oboInOwl:hasDbXref "C0012854";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C812 a skos:Concept;
+  skos:prefLabel "RNA"@en;
+  skos:definition "Single-stranded long chain of nucleotides containing ribose. It is the end product of DNA transcription by the enzyme RNA polymerase. It is essential in protein synthesis."@en;
+  rdfs:label "Ribonucleic Acid"@en;
+  skos:broader vs:HRAVS_0000001;
+  skos:notation "C812";
+  oboInOwl:hasDbXref "C0035668";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C17021 a skos:Concept;
+  skos:prefLabel "Protein"@en;
+  skos:definition "A group of complex organic macromolecules composed of one or more chains (linear polymers) of alpha-L-amino acids linked by peptide bonds and ranging in size from a few thousand to over 1 million Daltons. Proteins are fundamental genetically encoded components of living cells with specific structures and functions dictated by amino acid sequence."@en;
+  rdfs:label "Protein"@en;
+  skos:broader vs:HRAVS_0000001;
+  skos:notation "C17021";
+  oboInOwl:hasDbXref "C0033684";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C735 a skos:Concept;
+  skos:prefLabel "Peptide"@en;
+  skos:definition "A compound of two or more amino acids where the alpha carboxyl group of one is bound to the alpha amino group of another."@en;
+  rdfs:label "Peptide"@en;
+  skos:broader vs:HRAVS_0000001;
+  skos:notation "C735";
+  oboInOwl:hasDbXref "C0030956";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C616 a skos:Concept;
+  skos:prefLabel "Lipid"@en;
+  skos:definition "A class of hydrocarbon-containing organic compounds. Lipids are insoluble in water but soluble in nonpolar solvents and play important roles in living organisms: these roles include functioning as energy storage molecules, serving as structural components of cell membranes, and constituting important signaling molecules. Lipids can be subdivided into 2 groups: fatty acids and glycerides."@en;
+  rdfs:label "Lipid"@en;
+  skos:broader vs:HRAVS_0000001;
+  skos:notation "C616";
+  oboInOwl:hasDbXref "C0023779";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C61154 a skos:Concept;
+  skos:prefLabel "Metabolite"@en;
+  skos:definition "Any substance involved in metabolism, either as a product of metabolism or as necessary for metabolism."@en;
+  rdfs:label "Metabolite"@en;
+  skos:broader vs:HRAVS_0000001;
+  skos:notation "C61154";
+  oboInOwl:hasDbXref "C0870883";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C13201 a skos:Concept;
+  skos:prefLabel "Chromatin"@en;
+  skos:definition "The genetic material of the nucleus, consisting of deoxyribonucleoprotein, which occurs in two forms during the phase between mitotic divisions: 1) as heterochromatin, seen as condensed, readily stainable clumps; 2) as euchromatin, dispersed lightly staining or nonstaining material. During mitotic division the chromatin condenses into chromosomes."@en;
+  rdfs:label "Chromatin"@en;
+  skos:broader vs:HRAVS_0000001;
+  skos:notation "C13201";
+  oboInOwl:hasDbXref "C0008546";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:CHEBI_18154 a skos:Concept;
+  skos:prefLabel "Polysaccharide"@en;
+  skos:definition "A biomacromolecule consisting of large numbers of monosaccharide residues linked glycosidically. This term is commonly used only for those containing more than ten monosaccharide residues."@en;
+  rdfs:label "Polysaccharide"@en;
+  skos:broader vs:HRAVS_0000001;
+  skos:notation "CHEBI:18154";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:CHEBI_51217 a skos:Concept;
+  skos:prefLabel "Fluorochrome"@en;
+  skos:definition "A fluorescent dye used to stain biological specimens."@en;
+  rdfs:label "Fluorochrome"@en;
+  skos:broader vs:HRAVS_0000001;
+  skos:notation "CHEBI:51217";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000131 a skos:Concept;
+  skos:prefLabel "Endogenous fluorophores"@en;
+  skos:definition "Endogenous fluorescence originates from naturally occurring fluorescent compounds, including structural proteins (e.g., elastin and collagens), lipids, or cellular metabolic cofactors [e.g., nicotinamide adenine dinucleotide (NADH) and flavin adenine dinucleotide (FAD)]"@en;
+  skos:broader vs:HRAVS_0000001;
+  skos:notation "HRAVS:0000131";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:CHEBI_59520 a skos:Concept;
+  skos:prefLabel "N-glycan"@en;
+  skos:definition "The term used to refer to the carbohydrate portion of N-glycoproteins when attached to a nitrogen from asparagine or arginine side-chains."@en;
+  rdfs:label "N-glycan"@en;
+  skos:broader vs:HRAVS_0000001;
+  skos:notation "CHEBI:59520";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000042 a skos:Concept;
+  skos:prefLabel "Microanatomic Structure"@en;
+  skos:definition "This is a set of controlled terms of microanatomic structure."@en;
+  skos:notation "HRAVS:0000042";
+  skos:narrower ncit:C12508, ncit:C13197;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C12508 a skos:Concept;
+  skos:prefLabel "Cell"@en;
+  skos:definition "The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid."@en;
+  rdfs:label "Cell"@en;
+  skos:broader vs:HRAVS_0000042;
+  skos:notation "C12508";
+  oboInOwl:hasDbXref "C3282337";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C13197 a skos:Concept;
+  skos:prefLabel "Nucleus"@en;
+  skos:definition "A body within the cell, surrounded by a membrane, within which lie the chromosomes, one or more nucleoli, combined with proteins, and exhibits mitosis."@en;
+  rdfs:label "Nucleus"@en;
+  skos:broader vs:HRAVS_0000042;
+  skos:notation "C13197";
+  oboInOwl:hasDbXref "C0007610";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000002 a skos:Concept;
+  skos:prefLabel "Assay"@en;
+  skos:definition "This is a set of controlled terms for assay techniques."@en;
+  skos:notation "HRAVS:0000002";
+  skos:narrower obo:OBI_0002117, obo:OBI_0002762, obo:OBI_0002959, obo:OBI_0003088,
+    obo:OBI_0003090, obo:OBI_0003092, obo:OBI_0003093, obo:OBI_0003095, obo:OBI_0003096,
+    obo:OBI_0003097, obo:OBI_0003098, obo:OBI_0003099, obo:OBI_0003101, obo:OBI_0003104,
+    obo:OBI_0003105, obo:OBI_0003106, obo:OBI_0003107;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0002117 a skos:Concept;
+  skos:prefLabel "Whole genome sequencing"@en;
+  skos:definition "A DNA sequencing assay that intends to provide information about the sequence of an entire genome of an organism."@en;
+  rdfs:label "Whole genome sequencing assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0002117";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0002762 a skos:Concept;
+  skos:prefLabel "snATAC-seq"@en;
+  skos:definition "An ATAC-seq assay in which single nuclei are isolated from frozen tissue samples, through a protocol designed to maximally preserve nucleus integrity during sample processing and optimize transposase-mediated fragmentation of chromatin in individual nuclei."@en;
+  rdfs:label "Single-nucleus ATAC-seq"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0002762";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0002959 a skos:Concept;
+  skos:prefLabel "TMT-MS"@en;
+  skos:definition "A type of tandem mass spectrometry where isotopomer labels are employed for accurate quantification and identification of specific proteins."@en;
+  rdfs:label "Tandem mass tag mass spectrometry assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0002959";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003088 a skos:Concept;
+  skos:prefLabel "Autofluorescence microscopy"@en;
+  skos:definition "An autofluorescence assay in which the light that is naturally emitted by a sample is visualized via microscopy after excitation of the sample with light at a suitable wavelength."@en;
+  rdfs:label "Autofluorescence microscopy assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003088";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003090 a skos:Concept;
+  skos:prefLabel "Bulk RNA-seq"@en;
+  skos:definition "An RNA-seq assay in which the sample that is sequenced is derived from a collection of cells, such as a tissue sample or entire cell culture, and therefore provides results representative of the aggregate of sample cells."@en;
+  rdfs:label "Bulk RNA-seq assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003090";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003092 a skos:Concept;
+  skos:prefLabel "Cell DIVE"@en;
+  skos:definition "A multiplexed fluorescent antibody imaging assay that involves an iterative staining, imaging and dye inactivation workflow for over 60 biomarkers on a single fixed tissue section."@en;
+  rdfs:label "Cell DIVE multiplexed imaging assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003092";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003093 a skos:Concept;
+  skos:prefLabel "CODEX"@en;
+  skos:definition "A multiplexed fluorescent antibody imaging assay that involves a highly multiplexed analysis of up to 40 proteins in a tissue using cyclic detection of DNA-indexed antibody panels."@en;
+  rdfs:label "Co-detection by indexing assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003093";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003095 a skos:Concept;
+  skos:prefLabel "DART-FISH"@en;
+  skos:definition "A fluorescence in-situ hybridization assay which involves multiplex in situ digital quantification of targeted RNA transcripts in fresh or frozen tissue providing an understanding of the spatial organization of different cell types."@en;
+  rdfs:label "Decoding amplified targeted transcripts with fluorescence in situ hybridization assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003095";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003096 a skos:Concept;
+  skos:prefLabel "Imaging mass cytometry"@en;
+  skos:definition "A cytometry time of flight assay in which molecules of interest on or in cells are imaged through a system in which samples are labeled with multiple different rare-earth tagged antibodies. The sample is then ablated with a laser and the labeled material is detected by cytometry time of flight mass spectrometry."@en;
+  rdfs:label "Imaging mass cytometry assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003096";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003097 a skos:Concept;
+  skos:prefLabel "LC-MS"@en;
+  skos:definition "A mass spectrometry assay where a sample mixture is first separated by liquid chromatography before being converted into ions which are characterized by using mass spectrometry based on their mass-to-charge ratio and relative abundance."@en;
+  rdfs:label "Liquid chromatography mass spectrometry assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003097";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003098 a skos:Concept;
+  skos:prefLabel "Lightsheet microscopy"@en;
+  skos:definition "A fluorescence microscopy that involves capturing of photons emitted by fluorophores excited with a thin sheet of laser light in a sample only in a relatively narrow plane by a detection objective oriented perpendicularly to the light sheet and imaged onto a detection device such as a CCD camera."@en;
+  rdfs:label "Lightsheet fluorescence microscopy assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003098";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003099 a skos:Concept;
+  skos:prefLabel "MALDI IMS"@en;
+  skos:definition "A mass spectrometry assay that involves collection of spatially resolved mass spectra of a sample during microscopy where a pulse laser is used to produce both ionisation and vaporization. The sample is held in a matrix (such as dihydrobenzoic acid) to protect it from direct laser illumination and to separate the sample molecules. The spectra are used to visualise the spatial distribution of biomolecules by their molecular masses."@en;
+  rdfs:label "Matrix assisted laser desorption ionization imaging mass spectrometry assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003099";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003101 a skos:Concept;
+  skos:prefLabel "Nano-DESI"@en;
+  skos:definition "A mass spectrometry assay that analyzes organic and biological molecules on a substrate by desorption of an analyte into a solvent bridge formed between two capillaries and the analysis surface. One capillary supplies solvent to create and maintain the bridge, while the second capillary transports the dissolved analyte from the bridge to the mass spectrometer. A high voltage applied between the inlet of mass spectrometer and the primary capillary creates a self-aspirating nanospray."@en;
+  rdfs:label "Nanospray desorption electrospray ionization assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003101";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003104 a skos:Concept;
+  skos:prefLabel "sciATAC-seq"@en;
+  skos:definition "An assay for transposase-accessible chromatin that uses sequencing which involves single cell combinatorial indexing ('sci-') strategy where nucleic acids from each of many cells are uniquely tagged through several rounds of split-pool barcoding which enables identification of single cells without single cell isolation."@en;
+  rdfs:label "Single cell combinatorial indexing assay for transposase-accessessable chromatin using sequencing"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003104";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003105 a skos:Concept;
+  skos:prefLabel "sciRNA-seq"@en;
+  skos:definition "A single-cell RNA sequencing assay that involves single cell combinatorial indexing ('sci-') strategy to profile the transcriptomes of single cells or nuclei without single cell isolation."@en;
+  rdfs:label "Single-cell combinatorial indexing RNA sequencing assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003105";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003106 a skos:Concept;
+  skos:prefLabel "seqFISH"@en;
+  skos:definition "A fluorescence in-situ hybridization assay that involves ultra-resolution imaging of cell activity by targetting thousands of single molecules with fluorescent probes which find and hybridize with complementary DNA or RNA sequences in the tissue sample, thus enabling identification of those molecules directly in single cells with their spatial context preserved."@en;
+  rdfs:label "Sequential fluorescence in-situ hybridization assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003106";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0003107 a skos:Concept;
+  skos:prefLabel "Slide-seq"@en;
+  skos:definition "An RNA-seq assay that involves transfer of RNA from tissue sections onto a surface covered in DNA-barcoded beads with known positions, allowing the locations of the RNA to be inferred by sequencing."@en;
+  rdfs:label "Slide-seq assay"@en;
+  skos:broader vs:HRAVS_0000002;
+  skos:notation "OBI:0003107";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000003 a skos:Concept;
+  skos:prefLabel "Material Storage Method"@en;
+  skos:definition "This is a set of controlled terms for means of storing materials."@en;
+  skos:notation "HRAVS:0000003";
+  skos:narrower ncit:C185338, ncit:C185339, ncit:C187069, vs:HRAVS_0000144, ncit:C70719,
+    vs:HRAVS_0000107, vs:HRAVS_0000132, vs:HRAVS_0000148, vs:HRAVS_0000104;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C185338 a skos:Concept;
+  skos:prefLabel "Frozen in liquid nitrogen"@en;
+  skos:definition "An indication that a material has been stored in liquid nitrogen."@en;
+  rdfs:label "Liquid nitrogen storage"@en;
+  skos:broader vs:HRAVS_0000003;
+  skos:notation "C185338";
+  oboInOwl:hasDbXref "CL1773600";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C185339 a skos:Concept;
+  skos:prefLabel "Frozen in liquid nitrogen vapor"@en;
+  skos:definition "An indication that a material has been stored in liquid nitrogen vapor."@en;
+  rdfs:label "Liquid nitrogen vapor storage"@en;
+  skos:broader vs:HRAVS_0000003;
+  skos:notation "C185339";
+  oboInOwl:hasDbXref "CL1773588";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C187069 a skos:Concept;
+  skos:prefLabel "Frozen on dry ice"@en;
+  skos:definition "A sample that is shipped in a frozen state maintained with dry ice."@en;
+  rdfs:label "Frozen on dry ice"@en;
+  skos:broader vs:HRAVS_0000003;
+  skos:notation "C187069";
+  oboInOwl:hasDbXref "CL1792042";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000144 a skos:Concept;
+  skos:prefLabel "Frozen on ice"@en;
+  skos:broader vs:HRAVS_0000003;
+  skos:notation "HRAVS:0000144";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C70719 a skos:Concept;
+  skos:prefLabel "Stored in ambient temperature"@en;
+  skos:definition "A specimen that has been subjected to and adjusted to the average ambient temperature of a room, usually considered to be around 20 degrees C (68 degrees F)."@en;
+  rdfs:label "Specimen at room temperature"@en;
+  skos:broader vs:HRAVS_0000003;
+  skos:notation "C70719";
+  oboInOwl:hasDbXref "C2348236";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000107 a skos:Concept;
+  skos:prefLabel "Frozen at -20 degrees celsius"@en;
+  skos:broader vs:HRAVS_0000003;
+  skos:notation "HRAVS:0000107";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000132 a skos:Concept;
+  skos:prefLabel "Frozen at -80 degrees celsius"@en;
+  skos:broader vs:HRAVS_0000003;
+  skos:notation "HRAVS:0000132";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000148 a skos:Concept;
+  skos:prefLabel "Incubated at 37 degrees celsius"@en;
+  skos:broader vs:HRAVS_0000003;
+  skos:notation "HRAVS:0000148";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000104 a skos:Concept;
+  skos:prefLabel "Stored in refrigerator"@en;
+  skos:broader vs:HRAVS_0000003;
+  skos:notation "HRAVS:0000104";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000004 a skos:Concept;
+  skos:prefLabel "Processed Material"@en;
+  skos:definition "This is a set of controlled terms for material entity that is created or changed during material processing."@en;
+  skos:notation "HRAVS:0000004";
+  skos:narrower obo:OBI_0000722, obo:OBI_0002481;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0000722 a skos:Concept;
+  skos:prefLabel "Paired-end"@en;
+  skos:definition "is a collection of short paired tags from the two ends of DNA fragments are extracted and covalently linked as ditag constructs"@en;
+  rdfs:label "paired-end library"@en;
+  skos:broader vs:HRAVS_0000004;
+  skos:notation "OBI:0000722";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0002481 a skos:Concept;
+  skos:prefLabel "Single-end"@en;
+  skos:definition "A cDNA library that is a collection of short tags from only one end of DNA fragments."@en;
+  rdfs:label "single-end library"@en;
+  skos:broader vs:HRAVS_0000004;
+  skos:notation "OBI:0002481";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000005 a skos:Concept;
+  skos:prefLabel "Machine Setting"@en;
+  skos:definition "This is a set of controlled terms for different machine settings."@en;
+  skos:notation "HRAVS:0000005";
+  skos:narrower vs:HRAVS_0000031, vs:HRAVS_0000032;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000031 a skos:Concept;
+  skos:prefLabel "Scan Direction"@en;
+  skos:definition "This is a set of controlled terms for scan direction."@en;
+  skos:broader vs:HRAVS_0000005;
+  skos:notation "HRAVS:0000031";
+  skos:narrower vs:HRAVS_0000108, vs:HRAVS_0000111, vs:HRAVS_0000137, vs:HRAVS_0000141;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000108 a skos:Concept;
+  skos:prefLabel "Left-and-down"@en;
+  skos:broader vs:HRAVS_0000031;
+  skos:notation "HRAVS:0000108";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000111 a skos:Concept;
+  skos:prefLabel "Left-and-up"@en;
+  skos:broader vs:HRAVS_0000031;
+  skos:notation "HRAVS:0000111";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000137 a skos:Concept;
+  skos:prefLabel "Right-and-down"@en;
+  skos:broader vs:HRAVS_0000031;
+  skos:notation "HRAVS:0000137";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000141 a skos:Concept;
+  skos:prefLabel "Right-and-up"@en;
+  skos:broader vs:HRAVS_0000031;
+  skos:notation "HRAVS:0000141";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000032 a skos:Concept;
+  skos:prefLabel "Tile Configuration"@en;
+  skos:definition "This is a set of controlled terms for tile configuration."@en;
+  skos:broader vs:HRAVS_0000005;
+  skos:notation "HRAVS:0000032";
+  skos:narrower vs:HRAVS_0000133, vs:HRAVS_0000138, vs:HRAVS_0000110, vs:HRAVS_0000122;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000133 a skos:Concept;
+  skos:prefLabel "Column-by-column"@en;
+  skos:broader vs:HRAVS_0000032;
+  skos:notation "HRAVS:0000133";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000138 a skos:Concept;
+  skos:prefLabel "Row-by-row"@en;
+  skos:broader vs:HRAVS_0000032;
+  skos:notation "HRAVS:0000138";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000110 a skos:Concept;
+  skos:prefLabel "Snake-by-columns"@en;
+  skos:broader vs:HRAVS_0000032;
+  skos:notation "HRAVS:0000110";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000122 a skos:Concept;
+  skos:prefLabel "Snake-by-rows"@en;
+  skos:broader vs:HRAVS_0000032;
+  skos:notation "HRAVS:0000122";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000006 a skos:Concept;
+  skos:prefLabel "Medium"@en;
+  skos:definition "This is a set of controlled terms for different kinds of medium used in processing a sample material."@en;
+  skos:notation "HRAVS:0000006";
+  skos:narrower vs:HRAVS_0000033, vs:HRAVS_0000034;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000033 a skos:Concept;
+  skos:prefLabel "Preparation Medium"@en;
+  skos:definition "This is a set of controlled terms for different kinds of preparation medium."@en;
+  skos:broader vs:HRAVS_0000006;
+  skos:notation "HRAVS:0000033";
+  skos:narrower obo:OBIB_0000213, obo:OBI_0100046, vs:HRAVS_0000116, vs:HRAVS_0000147,
+    vs:HRAVS_0000149, vs:HRAVS_0000130, vs:HRAVS_0000126, vs:HRAVS_0000198, vs:HRAVS_0000105,
+    ncit:C63348, obo:CHEBI_17790, vs:HRAVS_0000140, obo:CHEBI_16236, ncit:C185113, vs:HRAVS_0000134,
+    vs:HRAVS_0000106, vs:HRAVS_0000123;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000109 a skos:Concept;
+  skos:prefLabel "PFA (2%)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000109";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000139 a skos:Concept;
+  skos:prefLabel "PFA (4%)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000139";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000127 a skos:Concept;
+  skos:prefLabel "Formalin (10%; NBF)"@en;
+  skos:broader vs:HRAVS_0000037;
+  skos:notation "HRAVS:0000127";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000119 a skos:Concept;
+  skos:prefLabel "Formalin (10%; Non-buffered)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000119";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBIB_0000213 a skos:Concept;
+  skos:prefLabel "Neutral Buffered Formalin (NBF)"@en;
+  skos:definition "A processed material that is a mixture of formalin (formaldehyde), phosphates, and water used as a standard fixative for diagnostic preparations."@en;
+  rdfs:label "Neutral buffered formalin"@en;
+  skos:broader vs:HRAVS_0000033, vs:HRAVS_0000034;
+  skos:notation "OBIB:0000213";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000120 a skos:Concept;
+  skos:prefLabel "PBS (100mM)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000120";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000101 a skos:Concept;
+  skos:prefLabel "PBS (10mM)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000101";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000117 a skos:Concept;
+  skos:prefLabel "PBS (1x)"@en;
+  skos:broader vs:HRAVS_0000037;
+  skos:notation "HRAVS:0000117";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:OBI_0100046 a skos:Concept;
+  skos:prefLabel "PBS"@en;
+  skos:definition "Phosphate buffered saline (abbreviated PBS) is a buffer solution commonly used in biochemistry. It is a salty solution containing sodium chloride, sodium phosphate and in some preparations potassium chloride and potassium phosphate. The buffer helps to maintain a constant pH. The concentration usually matches the human body (isotonic)."@en;
+  rdfs:label "Phosphate buffered saline solution"@en;
+  skos:broader vs:HRAVS_0000033, vs:HRAVS_0000034;
+  skos:notation "OBI:0100046";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000116 a skos:Concept;
+  skos:prefLabel "Fixed frozen OCT (Formalin, sucrose protected)"@en;
+  skos:broader vs:HRAVS_0000033;
+  skos:notation "HRAVS:0000116";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000147 a skos:Concept;
+  skos:prefLabel "Fixed frozen OCT (PFA, sucrose protected)"@en;
+  skos:broader vs:HRAVS_0000033;
+  skos:notation "HRAVS:0000147";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000149 a skos:Concept;
+  skos:prefLabel "Fixed frozen OCT (Cytofix/Cytoperm)"@en;
+  skos:broader vs:HRAVS_0000033;
+  skos:notation "HRAVS:0000149";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000130 a skos:Concept;
+  skos:prefLabel "Fresh frozen CMC"@en;
+  skos:broader vs:HRAVS_0000033;
+  skos:notation "HRAVS:0000130";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000126 a skos:Concept;
+  skos:prefLabel "Fresh frozen OCT"@en;
+  skos:broader vs:HRAVS_0000033;
+  skos:notation "HRAVS:0000126";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000198 a skos:Concept;
+  skos:prefLabel "Fresh frozen gelatin"@en;
+  skos:broader vs:HRAVS_0000033;
+  skos:notation "HRAVS:0000198";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000105 a skos:Concept;
+  skos:prefLabel "MACS tissue storage solution"@en;
+  skos:broader vs:HRAVS_0000033, vs:HRAVS_0000034;
+  skos:notation "HRAVS:0000105";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C63348 a skos:Concept;
+  skos:prefLabel "RNAlater"@en;
+  skos:definition "Trade name for an aqueous, non-toxic tissue storage reagent that rapidly permeates tissues to stabilize and protect cellular RNA."@en;
+  rdfs:label "RNALater"@en;
+  skos:broader vs:HRAVS_0000033, vs:HRAVS_0000034;
+  skos:notation "C63348";
+  oboInOwl:hasDbXref "C1882529";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000145 a skos:Concept;
+  skos:prefLabel "Methanol (50% Ethanol)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000145";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:CHEBI_17790 a skos:Concept;
+  skos:prefLabel "Methanol"@en;
+  skos:definition "The primary alcohol that is the simplest aliphatic alcohol, comprising a methyl and an alcohol group."@en;
+  rdfs:label "Methanol"@en;
+  skos:broader vs:HRAVS_0000033, vs:HRAVS_0000034;
+  skos:notation "CHEBI:17790";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000140 a skos:Concept;
+  skos:prefLabel "Bouin's"@en;
+  skos:broader vs:HRAVS_0000033;
+  skos:notation "HRAVS:0000140";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:CHEBI_16236 a skos:Concept;
+  skos:prefLabel "Ethanol"@en;
+  skos:definition "A primary alcohol that is ethane in which one of the hydrogens is substituted by a hydroxy group."@en;
+  rdfs:label "Ethanol"@en;
+  skos:broader vs:HRAVS_0000033, vs:HRAVS_0000034;
+  skos:notation "CHEBI:16236";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C185113 a skos:Concept;
+  skos:prefLabel "PAXgene tissue kit (PXT)"@en;
+  skos:definition "A proprietary system comprised of a formalin-free tissue fixative and stabilizing reagent designed to preserve tissue structures without damaging biomolecules. This allows both histologic examination and isolation of RNA, miRNA, DNA, and/or proteins from a single sample."@en;
+  rdfs:label "PAXgene tissue system"@en;
+  skos:broader vs:HRAVS_0000033, vs:HRAVS_0000034;
+  skos:notation "C185113";
+  oboInOwl:hasDbXref "CL1773150";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000134 a skos:Concept;
+  skos:prefLabel "CLARITY hydrogel"@en;
+  skos:broader vs:HRAVS_0000033;
+  skos:notation "HRAVS:0000134";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000106 a skos:Concept;
+  skos:prefLabel "Inflated (Agarose)"@en;
+  skos:broader vs:HRAVS_0000033;
+  skos:notation "HRAVS:0000106";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000123 a skos:Concept;
+  skos:prefLabel "Inflated (OCT)"@en;
+  skos:broader vs:HRAVS_0000033;
+  skos:notation "HRAVS:0000123";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000034 a skos:Concept;
+  skos:prefLabel "Storage Medium"@en;
+  skos:definition "This is a set of controlled terms for different kinds of storage medium."@en;
+  skos:broader vs:HRAVS_0000006;
+  skos:notation "HRAVS:0000034";
+  skos:narrower obo:OBIB_0000213, obo:OBI_0100046, vs:HRAVS_0000105, ncit:C63348, obo:CHEBI_17790,
+    obo:CHEBI_16236, ncit:C185113, ncit:C65802, ncit:C83594, ncit:C63523, ncit:C143028,
+    vs:HRAVS_0000135, vs:HRAVS_0000125, vs:HRAVS_0000115;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000114 a skos:Concept;
+  skos:prefLabel "PBS (0.05% Azide)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000114";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000129 a skos:Concept;
+  skos:prefLabel "PBS Antifreeze (50% Glycerol; 0.05% Azide)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000129";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C65802 a skos:Concept;
+  skos:prefLabel "Gelatin"@en;
+  rdfs:label "Gelatin"@en;
+  skos:broader vs:HRAVS_0000034;
+  skos:notation "C65802";
+  oboInOwl:hasDbXref "C0017237";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C83594 a skos:Concept;
+  skos:prefLabel "CMC"@en;
+  rdfs:label "Carboxymethylcellulose"@en;
+  skos:broader vs:HRAVS_0000034;
+  skos:notation "C83594";
+  oboInOwl:hasDbXref "C0007068";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C63523 a skos:Concept;
+  skos:prefLabel "OCT"@en;
+  skos:definition "A solution of water soluble glycols and resins that provide a specimen support matrix for cryostat sectioning at temperatures of -10 degrees C and below."@en;
+  rdfs:label "Optimal cutting temperature compound"@en;
+  skos:broader vs:HRAVS_0000034;
+  skos:notation "C63523";
+  oboInOwl:hasDbXref "C1882161";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C143028 a skos:Concept;
+  skos:prefLabel "Paraffin embedded (FFPE)"@en;
+  skos:definition "Refers to a process where a sample is preserved with formalin and then embedded into a paraffin block for sectioning."@en;
+  rdfs:label "Formalin-fixed paraffin-embedded"@en;
+  skos:broader vs:HRAVS_0000034;
+  skos:notation "C143028";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000100 a skos:Concept;
+  skos:prefLabel "Methanol (80%)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000100";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000135 a skos:Concept;
+  skos:prefLabel "Tris-EDTA"@en;
+  skos:broader vs:HRAVS_0000034;
+  skos:notation "HRAVS:0000135";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000121 a skos:Concept;
+  skos:prefLabel "Ethanol (70%)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000121";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000125 a skos:Concept;
+  skos:prefLabel "DMSO (with serum)"@en;
+  skos:broader vs:HRAVS_0000034;
+  skos:notation "HRAVS:0000125";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000115 a skos:Concept;
+  skos:prefLabel "DMSO (no serum)"@en;
+  skos:broader vs:HRAVS_0000034;
+  skos:notation "HRAVS:0000115";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000035 a skos:Concept;
+  skos:prefLabel "Solution"@en;
+  skos:definition "This is a set of controlled terms for different kinds of chemical solution used in processing sample materials."@en;
+  skos:notation "HRAVS:0000035";
+  skos:narrower vs:HRAVS_0000036, vs:HRAVS_0000037;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000036 a skos:Concept;
+  skos:prefLabel "Perfusion Solution"@en;
+  skos:definition "This is a set of controlled terms for different kinds of perfusion solution."@en;
+  skos:broader vs:HRAVS_0000035;
+  skos:notation "HRAVS:0000036";
+  skos:narrower vs:HRAVS_0000150, vs:HRAVS_0000151, vs:HRAVS_0000152, vs:HRAVS_0000153;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000150 a skos:Concept;
+  skos:prefLabel "Miltenyi Tissue Preservation Buffer"@en;
+  skos:broader vs:HRAVS_0000036, vs:HRAVS_0000037;
+  skos:notation "HRAVS:0000150";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000151 a skos:Concept;
+  skos:prefLabel "UWS"@en;
+  rdfs:label "University of Wisconsin Solution"@en;
+  skos:broader vs:HRAVS_0000036, vs:HRAVS_0000037;
+  skos:notation "HRAVS:0000151";
+  oboInOwl:hasDbXref "C0164947", "C0285731", "C0077955", "C0148364";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000152 a skos:Concept;
+  skos:prefLabel "HTK"@en;
+  rdfs:label "Histidine-Tryptophan-Ketoglutarate"@en;
+  skos:broader vs:HRAVS_0000036, vs:HRAVS_0000037;
+  skos:notation "HRAVS:0000152";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000153 a skos:Concept;
+  skos:prefLabel "Belzer MPS/KPS"@en;
+  skos:broader vs:HRAVS_0000036, vs:HRAVS_0000037;
+  skos:notation "HRAVS:0000153";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000037 a skos:Concept;
+  skos:prefLabel "Transport Solution"@en;
+  skos:definition "This is a set of controlled terms for different kinds of transport solution."@en;
+  skos:broader vs:HRAVS_0000035;
+  skos:notation "HRAVS:0000037";
+  skos:narrower vs:HRAVS_0000127, vs:HRAVS_0000117, vs:HRAVS_0000150, vs:HRAVS_0000151,
+    vs:HRAVS_0000152, vs:HRAVS_0000153, ncit:C178973, vs:HRAVS_0000154, ncit:C185409;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C178973 a skos:Concept;
+  skos:prefLabel "RPMI"@en;
+  skos:definition "A sodium bicarbonate-buffered medium formulated for use in a 5-10% carbon dioxide atmosphere. It is used in the cell culture of human lymphoid cells."@en;
+  rdfs:label "Roswell Park Memorial Institute 1640 Medium"@en;
+  skos:broader vs:HRAVS_0000037;
+  skos:notation "C178973";
+  oboInOwl:hasDbXref "CL1648508";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000154 a skos:Concept;
+  skos:prefLabel "Saline (Buffered)"@en;
+  skos:broader vs:HRAVS_0000037;
+  skos:notation "HRAVS:0000154";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C185409 a skos:Concept;
+  skos:prefLabel "DMEM"@en;
+  skos:definition "A serum-free medium for supporting the growth of adherent mammalian cells. It contains a combination of 6 salts, 13 essential amino acids, and 8 vitamins and is intended for use in a humidified incubator where the air contains 5% carbon dioxide."@en;
+  rdfs:label "Dulbecco's Modified Eagle Medium"@en;
+  skos:broader vs:HRAVS_0000037;
+  skos:notation "C185409";
+  oboInOwl:hasDbXref "CL1773833";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000007 a skos:Concept;
+  skos:prefLabel "Research Technique"@en;
+  skos:definition "This is a set of controlled terms for techniques used in the laboratory for scientific research."@en;
+  skos:notation "HRAVS:0000007";
+  skos:narrower vs:HRAVS_0000043, vs:HRAVS_0000044;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000043 a skos:Concept;
+  skos:prefLabel "Analytical Technique"@en;
+  skos:definition "This is a set of controlled terms for techniques used to analyze and study different aspects of samples."@en;
+  skos:broader vs:HRAVS_0000007;
+  skos:notation "HRAVS:0000043";
+  skos:narrower ncit:C17156, ncit:C17369, obo:MS_1002521, ncit:C18883;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C17156 a skos:Concept;
+  skos:prefLabel "Mass spectrometry"@en;
+  skos:definition "An analytical technique wherein ions are separated according to their ratio of charge to mass. From the mass spectrum produced, the atomic weight of the particle can be deduced."@en;
+  rdfs:label "Mass Spectrometry"@en;
+  skos:broader vs:HRAVS_0000043;
+  skos:notation "C17156";
+  oboInOwl:hasDbXref "C0037813";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C17369 a skos:Concept;
+  skos:prefLabel "Imaging"@en;
+  skos:definition "Any technology or method that aids in the visualization of any biological process, cell, tissue or organ for use in screening, diagnosis, surgical procedures or therapy."@en;
+  rdfs:label "Imaging Technique"@en;
+  skos:broader vs:HRAVS_0000043;
+  skos:notation "C17369";
+  oboInOwl:hasDbXref "C0079595";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:MS_1002521 a skos:Concept;
+  skos:prefLabel "Mass spectrometry imaging"@en;
+  skos:definition "A technique in which mass spectra are acquired in a spatially resolved manner. This is typically achieved by scanning a laser or primary ion beam over a sample and acquiring a mass spectrum at each position."@en;
+  rdfs:label "Mass Spectrometry Imaging"@en;
+  skos:broader vs:HRAVS_0000043;
+  skos:notation "MS:1002521";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C18883 a skos:Concept;
+  skos:prefLabel "Sequencing"@en;
+  skos:definition "The process of determining the sequence of amino acids within a protein molecule."@en;
+  rdfs:label "Protein Sequencing"@en;
+  skos:broader vs:HRAVS_0000043;
+  skos:notation "C18883";
+  oboInOwl:hasDbXref "C0751971";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000044 a skos:Concept;
+  skos:prefLabel "Stain Technique"@en;
+  skos:definition "This is a set of controlled terms for techniques used in sample staining."@en;
+  skos:broader vs:HRAVS_0000007;
+  skos:notation "HRAVS:0000044";
+  skos:narrower vs:HRAVS_0000103, vs:HRAVS_0000113, vs:HRAVS_0000143;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000103 a skos:Concept;
+  skos:prefLabel "Regressive staining"@en;
+  skos:broader vs:HRAVS_0000044;
+  skos:notation "HRAVS:0000103";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000113 a skos:Concept;
+  skos:prefLabel "Modified progressive staining"@en;
+  skos:broader vs:HRAVS_0000044;
+  skos:notation "HRAVS:0000113";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000143 a skos:Concept;
+  skos:prefLabel "Progressive staining"@en;
+  skos:broader vs:HRAVS_0000044;
+  skos:notation "HRAVS:0000143";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000008 a skos:Concept;
+  skos:prefLabel "Missing Value Reason"@en;
+  skos:notation "HRAVS:0000008";
+  skos:narrower ncit:C48660, ncit:C17998;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C48660 a skos:Concept;
+  skos:prefLabel "Not applicable"@en;
+  skos:definition "Determination of a value is not relevant in the current context."@en;
+  rdfs:label "Not applicable"@en;
+  skos:broader vs:HRAVS_0000008;
+  skos:notation "C48660";
+  oboInOwl:hasDbXref "C1272460";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C17998 a skos:Concept;
+  skos:prefLabel "Unknown"@en;
+  skos:definition "Not known, observed, recorded; or reported as unknown by the data contributor."@en;
+  rdfs:label "Unknown"@en;
+  skos:broader vs:HRAVS_0000008;
+  skos:notation "C17998";
+  oboInOwl:hasDbXref "C0439673";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000009 a skos:Concept;
+  skos:prefLabel "Organ"@en;
+  skos:notation "HRAVS:0000009";
+  skos:narrower obo:UBERON_0000010, obo:UBERON_0000029, obo:UBERON_0000056, obo:UBERON_0000059,
+    obo:UBERON_0000948, obo:UBERON_0000970, obo:UBERON_0000992, obo:UBERON_0000995, obo:UBERON_0001255,
+    obo:UBERON_0001264, obo:UBERON_0001465, obo:UBERON_0001987, obo:UBERON_0002048, obo:UBERON_0002097,
+    obo:UBERON_0002106, obo:UBERON_0002107, obo:UBERON_0002108, obo:UBERON_0002113, obo:UBERON_0002367,
+    obo:UBERON_0002370, obo:UBERON_0004536, obo:UBERON_0004538, obo:UBERON_0004539, obo:UBERON_0004548,
+    obo:UBERON_0004549;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0000010 a skos:Concept;
+  skos:prefLabel "Peripheral nervous system"@en;
+  skos:definition "A major division of the nervous system that contains nerves which connect the central nervous system (CNS) with sensory organs, other organs, muscles, blood vessels and glands."@en;
+  rdfs:label "Peripheral nervous system"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0000010";
+  oboInOwl:hasDbXref "C0206417", "FMA:9903";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0000029 a skos:Concept;
+  skos:prefLabel "Lymph node"@en;
+  skos:definition "Any of the rounded masses of lymphoid tissue that are surrounded by a capsule of connective tissue, are distributed along the lymphatic vessels, and contain numerous lymphocytes which filter the flow of lymph."@en;
+  rdfs:label "Lymph node"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0000029";
+  oboInOwl:hasDbXref "C0024204", "FMA:5034";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0000056 a skos:Concept;
+  skos:prefLabel "Ureter"@en;
+  skos:definition "Muscular duct that propels urine from the kidneys to the urinary bladder, or related organs."@en;
+  rdfs:label "Ureter"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0000056";
+  oboInOwl:hasDbXref "C0041951", "FMA:9704";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0000059 a skos:Concept;
+  skos:prefLabel "Large intestine"@en;
+  skos:definition "A subdivision of the digestive tract that connects the small intestine to the cloaca or anus."@en;
+  rdfs:label "Large intestine"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0000059";
+  oboInOwl:hasDbXref "C0021851", "FMA:7201";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0000948 a skos:Concept;
+  skos:prefLabel "Heart"@en;
+  skos:definition "Taxon notes:\" the ascidian tube-like heart lacks chambers....The ascidian heart is formed after metamorphosis as a simple tube-like structure with a single-layered myoepithelium that is continuous with a single-layered pericar- dial wall. It lacks chambers and endocardium.... The innovation of the chambered heart was a key event in vertebrate evolution, because the chambered heart generates one-way blood flow with high pressure, a critical requirement for the efficient blood supply of large-body vertebrates... all extant vertebrates have hearts with two or more chambers (Moorman and Christoffels 2003)\" DOI:10.1101/gad.1485706 A myogenic muscular circulatory organ found in the vertebrate cardiovascular system composed of chambers of cardiac muscle. It is the primary circulatory organ."@en;
+  rdfs:label "Heart"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0000948";
+  oboInOwl:hasDbXref "C0018787", "FMA:7088";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0000970 a skos:Concept;
+  skos:prefLabel "Eye"@en;
+  skos:definition "An organ that detects light."@en;
+  rdfs:label "Eye"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0000970";
+  oboInOwl:hasDbXref "C0015392", "FMA:54448";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0000992 a skos:Concept;
+  skos:prefLabel "Ovary"@en;
+  skos:definition "The gonad of a female organism which contains germ cells."@en;
+  rdfs:label "Ovary"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0000992";
+  oboInOwl:hasDbXref "C0029939", "FMA:7209";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0000995 a skos:Concept;
+  skos:prefLabel "Uterus"@en;
+  skos:definition "The female muscular organ of gestation in which the developing embryo or fetus is nourished until birth."@en;
+  rdfs:label "Uterus"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0000995";
+  oboInOwl:hasDbXref "C0042149", "FMA:17558";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0001255 a skos:Concept;
+  skos:prefLabel "Urinary bladder"@en;
+  skos:definition "Distensible musculomembranous organ situated in the anterior part of the pelvic cavity in which urine collects before excretion."@en;
+  rdfs:label "Urinary bladder"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0001255";
+  oboInOwl:hasDbXref "C0005682", "FMA:15900";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0001264 a skos:Concept;
+  skos:prefLabel "Pancreas"@en;
+  skos:definition "An endoderm derived structure that produces precursors of digestive enzymes and blood glucose regulating hormones."@en;
+  rdfs:label "Pancreas"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0001264";
+  oboInOwl:hasDbXref "C0030274", "FMA:7198";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0001465 a skos:Concept;
+  skos:prefLabel "Knee"@en;
+  skos:definition "A segment of the hindlimb that corresponds to the joint connecting a hindlimb stylopod and zeugopod."@en;
+  rdfs:label "Knee"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0001465";
+  oboInOwl:hasDbXref "FMA:24974";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0001987 a skos:Concept;
+  skos:prefLabel "Placenta"@en;
+  skos:definition "Organ of metabolic interchange between fetus and mother, partly of embryonic origin and partly of maternal origin."@en;
+  rdfs:label "Placenta"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0001987";
+  oboInOwl:hasDbXref "C0032043", "FMA:63934";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0002048 a skos:Concept;
+  skos:prefLabel "Lung"@en;
+  skos:definition "Respiration organ that develops as an outpocketing of the esophagus."@en;
+  rdfs:label "Lung"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0002048";
+  oboInOwl:hasDbXref "C0024109", "FMA:7195";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0002097 a skos:Concept;
+  skos:prefLabel "Skin"@en;
+  skos:definition "The organ covering the body that consists of the dermis and epidermis."@en;
+  rdfs:label "Skin of body"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0002097";
+  oboInOwl:hasDbXref "C1123023", "FMA:7163";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0002106 a skos:Concept;
+  skos:prefLabel "Spleen"@en;
+  skos:definition "The organ that functions to filter blood and to store red corpuscles and platelets."@en;
+  rdfs:label "Spleen"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0002106";
+  oboInOwl:hasDbXref "C0037993", "FMA:7196";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0002107 a skos:Concept;
+  skos:prefLabel "Liver"@en;
+  skos:definition "An exocrine gland which secretes bile and functions in metabolism of protein and carbohydrate and fat, synthesizes substances involved in the clotting of the blood, synthesizes vitamin A, detoxifies poisonous substances, stores glycogen, and breaks down worn-out erythrocytes."@en;
+  rdfs:label "Liver"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0002107";
+  oboInOwl:hasDbXref "C0023884", "FMA:7197";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0002108 a skos:Concept;
+  skos:prefLabel "Small intestine"@en;
+  skos:definition "Subdivision of digestive tract that connects the stomach to the large intestine and is where much of the digestion and absorption of food takes place (with the exception of ruminants)."@en;
+  rdfs:label "Small intestine"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0002108";
+  oboInOwl:hasDbXref "C0021852", "FMA:7200";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0002113 a skos:Concept;
+  skos:prefLabel "Kidney"@en;
+  skos:definition "A paired organ of the urinary tract which has the production of urine as its primary function."@en;
+  rdfs:label "Kidney"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0002113";
+  oboInOwl:hasDbXref "C0022646", "FMA:7203";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0002367 a skos:Concept;
+  skos:prefLabel "Prostate"@en;
+  skos:definition "The prostate gland is a partly muscular, partly glandular body that is situated near the base of the mammalian male urethra and secretes an alkaline viscid fluid which is a major constituent of the ejaculatory fluid."@en;
+  rdfs:label "Prostate gland"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0002367";
+  oboInOwl:hasDbXref "C0033572", "FMA:9600";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0002370 a skos:Concept;
+  skos:prefLabel "Thymus"@en;
+  skos:definition "Anatomical structure of largely lymphoid tissue that functions in cell-mediated immunity by being the site where T cells develop."@en;
+  rdfs:label "Thymus"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0002370";
+  oboInOwl:hasDbXref "C0040113", "FMA:9607";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0004536 a skos:Concept;
+  skos:prefLabel "Lymph vasculature"@en;
+  skos:definition "A network of blunt ended vessels lacking direct connection to the blood vascular system. These vessels collect and drain fluids and macromolecules from interstitial spaces throughout the animal. They derive from a subpopulation of endothelial cells and have walls that are much thinner than the blood carrying vessels. Lymphatic vessels are usually classified as either superficial or deep."@en;
+  rdfs:label "Lymph vasculature"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0004536";
+  oboInOwl:hasDbXref "C0229889", "FMA:63815";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0004538 a skos:Concept;
+  skos:prefLabel "Left kidney"@en;
+  skos:definition "A kidney that is part of a left side of organism"@en;
+  rdfs:label "Left kidney"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0004538";
+  oboInOwl:hasDbXref "C0227614", "FMA:7205";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0004539 a skos:Concept;
+  skos:prefLabel "Right kidney"@en;
+  skos:definition "A kidney that is part of a right side of organism."@en;
+  rdfs:label "Right kidney"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0004539";
+  oboInOwl:hasDbXref "C0227613", "FMA:7204";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0004548 a skos:Concept;
+  skos:prefLabel "Left eye"@en;
+  skos:definition "An eye that is part of a left side of organism."@en;
+  rdfs:label "Left eye"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0004548";
+  oboInOwl:hasDbXref "C0229090", "FMA:12515";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UBERON_0004549 a skos:Concept;
+  skos:prefLabel "Right eye"@en;
+  skos:definition "An eye that is part of a right side of organism."@en;
+  rdfs:label "Right eye"@en;
+  skos:broader vs:HRAVS_0000009;
+  skos:notation "UBERON:0004549";
+  oboInOwl:hasDbXref "C0229089", "FMA:12514";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000010 a skos:Concept;
+  skos:prefLabel "Qualifier"@en;
+  skos:definition "This is a set of controlled terms for defining and rendering a concept unique."@en;
+  skos:notation "HRAVS:0000010";
+  skos:narrower vs:HRAVS_0000038, vs:HRAVS_0000039, vs:HRAVS_0000040, vs:HRAVS_0000041;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000038 a skos:Concept;
+  skos:prefLabel "Condition"@en;
+  skos:definition "This is a set of controlled terms for defining a condition."@en;
+  skos:broader vs:HRAVS_0000010;
+  skos:notation "HRAVS:0000038";
+  skos:narrower ncit:C115935, ncit:C175249;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C115935 a skos:Concept;
+  skos:prefLabel "Healthy"@en;
+  skos:definition "Having no significant health-related issues."@en;
+  rdfs:label "Healthy"@en;
+  skos:broader vs:HRAVS_0000038;
+  skos:notation "C115935";
+  oboInOwl:hasDbXref "C3898900";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C175249 a skos:Concept;
+  skos:prefLabel "Diseased"@en;
+  skos:definition "An indication that an anatomic structure has detectable aberrations."@en;
+  rdfs:label "Diseased"@en;
+  skos:broader vs:HRAVS_0000038;
+  skos:notation "C175249";
+  oboInOwl:hasDbXref "CL1412755";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000039 a skos:Concept;
+  skos:prefLabel "Laterality"@en;
+  skos:definition "This is a set of controlled terms for defining an organ laterality."@en;
+  skos:broader vs:HRAVS_0000010;
+  skos:notation "HRAVS:0000039";
+  skos:narrower ncit:C25228, ncit:C25229, ncit:C81170;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C25228 a skos:Concept;
+  skos:prefLabel "Right"@en;
+  skos:definition "Being or located on or directed toward the side of the body to the east when facing north."@en;
+  rdfs:label "Right"@en;
+  skos:broader vs:HRAVS_0000039;
+  skos:notation "C25228";
+  oboInOwl:hasDbXref "C0205090";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C25229 a skos:Concept;
+  skos:prefLabel "Left"@en;
+  skos:definition "Being or located on or directed toward the side of the body to the west when facing north."@en;
+  rdfs:label "Left"@en;
+  skos:broader vs:HRAVS_0000039;
+  skos:notation "C25229";
+  oboInOwl:hasDbXref "C0205091";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C81170 a skos:Concept;
+  skos:prefLabel "Midline"@en;
+  skos:definition "A medial line, especially the medial line or medial plane of the body (or some part of the body)."@en;
+  rdfs:label "Midline"@en;
+  skos:broader vs:HRAVS_0000039;
+  skos:notation "C81170";
+  oboInOwl:hasDbXref "C0549183";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000040 a skos:Concept;
+  skos:prefLabel "Assessment Answer"@en;
+  skos:definition "This is a set of controlled terms for defining an assessment answer."@en;
+  skos:broader vs:HRAVS_0000010;
+  skos:notation "HRAVS:0000040";
+  skos:narrower ncit:C41132;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C41132 a skos:Concept;
+  skos:prefLabel "None"@en;
+  skos:definition "No person or thing, nobody, not any."@en;
+  rdfs:label "None"@en;
+  skos:broader vs:HRAVS_0000040;
+  skos:notation "C41132";
+  oboInOwl:hasDbXref "C0549184";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000041 a skos:Concept;
+  skos:prefLabel "Attribute"@en;
+  skos:definition "This is a set of controlled terms for defining an attribute or a property."@en;
+  skos:broader vs:HRAVS_0000010;
+  skos:notation "HRAVS:0000041";
+  skos:narrower ncit:C126386;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+ncit:C126386 a skos:Concept;
+  skos:prefLabel "In-House"@en;
+  skos:definition "Created, done, or existing within a company or organization."@en;
+  rdfs:label "In-House"@en;
+  skos:broader vs:HRAVS_0000041;
+  skos:notation "C126386";
+  oboInOwl:hasDbXref "C3843862";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000011 a skos:Concept;
+  skos:prefLabel "Stain"@en;
+  skos:definition "This is a set of controlled terms for stain types."@en;
+  skos:notation "HRAVS:0000011";
+  skos:narrower loinc:LP6310-9, loinc:LP6368-7, loinc:LP6443-8, loinc:LP6562-5;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+loinc:LP6310-9 a skos:Concept;
+  skos:prefLabel "H&E"@en;
+  skos:definition "Hematoxylin is a dark purplish dye that stains the chromatin (nuclear material) within the nucleus. Eosin is an orangish-pink to red dye that stains the cytoplasmic material including connective tissue and collagen."@en;
+  rdfs:label "Hematoxylin and eosin stain"@en;
+  skos:broader vs:HRAVS_0000011;
+  skos:notation "LP6310-9";
+  oboInOwl:hasDbXref "C0523207";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+loinc:LP6368-7 a skos:Concept;
+  skos:prefLabel "LFB"@en;
+  skos:definition "An alcohol soluble copper phthalocyanine dye, and cresyl violet, an organic compound that is commonly used as a counter stain, to determine the presence of myelin as well as helicobacter and campylobacter bacterial species."@en;
+  rdfs:label "Luxol fast blue/Cresyl violet stain"@en;
+  skos:broader vs:HRAVS_0000011;
+  skos:notation "LP6368-7";
+  oboInOwl:hasDbXref "C1293988";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+loinc:LP6443-8 a skos:Concept;
+  skos:prefLabel "PAS"@en;
+  skos:definition "This is an all-round useful stain for many things, including glycogen, mucin, mucoprotein, glycoprotein, as well as fungi. The reaction is based on the oxidation of glycol group to aldehydes by periodate. The schiff's reagent selectively stains the aldehydes to a rose pink color. PAS is useful for outlining tissue structures--basement membranes, capsules, blood vessels, etc."@en;
+  rdfs:label "Periodic acid-Schiff stain"@en;
+  skos:broader vs:HRAVS_0000011;
+  skos:notation "LP6443-8";
+  oboInOwl:hasDbXref "C0523213";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+loinc:LP6562-5 a skos:Concept;
+  skos:prefLabel "Trichrome"@en;
+  skos:definition "Acid dyes and washes to selectively dye the structural elements in tissue samples in three or more contrasting colors."@en;
+  rdfs:label "Trichrome stain"@en;
+  skos:broader vs:HRAVS_0000011;
+  skos:notation "LP6562-5";
+  oboInOwl:hasDbXref "C1318478";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000012 a skos:Concept;
+  skos:prefLabel "Unit of Measurement"@en;
+  skos:definition "This is a set of controlled terms for measurement units."@en;
+  skos:notation "HRAVS:0000012";
+  skos:narrower vs:HRAVS_0000018, vs:HRAVS_0000019, vs:HRAVS_0000020, vs:HRAVS_0000021,
+    vs:HRAVS_0000022, vs:HRAVS_0000023, vs:HRAVS_0000024;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000018 a skos:Concept;
+  skos:prefLabel "Unit of Area"@en;
+  skos:definition "This is a set of controlled terms for area unit."@en;
+  skos:broader vs:HRAVS_0000012;
+  skos:notation "HRAVS:0000018";
+  skos:narrower obo:UO_0000081, obo:UO_0000082, obo:UO_0010001;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000081 a skos:Concept;
+  skos:prefLabel "cm^2"@en;
+  skos:definition "An area unit which is equal to one ten thousandth of a square meter or 10^[-4] m^[2]."@en;
+  rdfs:label "square centimeter"@en;
+  skos:broader vs:HRAVS_0000018;
+  skos:notation "UO:0000081";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000082 a skos:Concept;
+  skos:prefLabel "mm^2"@en;
+  skos:definition "An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2]."@en;
+  rdfs:label "square millimeter"@en;
+  skos:broader vs:HRAVS_0000018;
+  skos:notation "UO:0000082";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0010001 a skos:Concept;
+  skos:prefLabel "um^2"@en;
+  skos:definition "An area unit which is equal to an area enclosed by a square with sides each 1 micrometer long."@en;
+  rdfs:label "square micrometer"@en;
+  skos:broader vs:HRAVS_0000018;
+  skos:notation "UO:0010001";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000019 a skos:Concept;
+  skos:prefLabel "Unit of Length"@en;
+  skos:definition "This is a set of controlled terms for length unit."@en;
+  skos:broader vs:HRAVS_0000012;
+  skos:notation "HRAVS:0000019";
+  skos:narrower obo:UO_0000015, obo:UO_0000016, obo:UO_0000017, obo:UO_0000018;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000015 a skos:Concept;
+  skos:prefLabel "cm"@en;
+  skos:definition "A length unit which is equal to one hundredth of a meter or 10^[-2] m."@en;
+  rdfs:label "centimeter"@en;
+  skos:broader vs:HRAVS_0000019;
+  skos:notation "UO:0000015";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000016 a skos:Concept;
+  skos:prefLabel "mm"@en;
+  skos:definition "A length unit which is equal to one thousandth of a meter or 10^[-3] m."@en;
+  rdfs:label "millimeter"@en;
+  skos:broader vs:HRAVS_0000019;
+  skos:notation "UO:0000016";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000017 a skos:Concept;
+  skos:prefLabel "um"@en;
+  skos:definition "A length unit which is equal to one millionth of a meter or 10^[-6] m."@en;
+  rdfs:label "micrometer"@en;
+  skos:broader vs:HRAVS_0000019;
+  skos:notation "UO:0000017";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000018 a skos:Concept;
+  skos:prefLabel "nm"@en;
+  skos:definition "A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m."@en;
+  rdfs:label "nanometer"@en;
+  skos:broader vs:HRAVS_0000019;
+  skos:notation "UO:0000018";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000020 a skos:Concept;
+  skos:prefLabel "Unit of Volume"@en;
+  skos:definition "This is a set of controlled terms for volume unit."@en;
+  skos:broader vs:HRAVS_0000012;
+  skos:notation "HRAVS:0000020";
+  skos:narrower obo:UO_0000097, vs:HRAVS_0000136, vs:HRAVS_0000112;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000097 a skos:Concept;
+  skos:prefLabel "cm^3"@en;
+  skos:definition "A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml."@en;
+  rdfs:label "cubic centimeter"@en;
+  skos:broader vs:HRAVS_0000020;
+  skos:notation "UO:0000097";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000136 a skos:Concept;
+  skos:prefLabel "mm^3"@en;
+  skos:broader vs:HRAVS_0000020;
+  skos:notation "HRAVS:0000136";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000112 a skos:Concept;
+  skos:prefLabel "um^3"@en;
+  skos:broader vs:HRAVS_0000020;
+  skos:notation "HRAVS:0000112";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000021 a skos:Concept;
+  skos:prefLabel "Unit of Liquid Volume"@en;
+  skos:definition "This is a set of controlled terms for liquid volume unit."@en;
+  skos:broader vs:HRAVS_0000012;
+  skos:notation "HRAVS:0000021";
+  skos:narrower obo:UO_0000099, obo:UO_0000098, obo:UO_0000101;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000099 a skos:Concept;
+  skos:prefLabel "l"@en;
+  skos:definition "A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter."@en;
+  rdfs:label "liter"@en;
+  skos:broader vs:HRAVS_0000021;
+  skos:notation "UO:0000099";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000098 a skos:Concept;
+  skos:prefLabel "ml"@en;
+  skos:definition "A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter."@en;
+  rdfs:label "milliliter"@en;
+  skos:broader vs:HRAVS_0000021;
+  skos:notation "UO:0000098";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000101 a skos:Concept;
+  skos:prefLabel "ul"@en;
+  skos:definition "A volume unit which is equal to one millionth of a liter or 10^[-6] L."@en;
+  rdfs:label "microliter"@en;
+  skos:broader vs:HRAVS_0000021;
+  skos:notation "UO:0000101";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000022 a skos:Concept;
+  skos:prefLabel "Unit of Weight"@en;
+  skos:definition "This is a set of controlled terms for weight unit."@en;
+  skos:broader vs:HRAVS_0000012;
+  skos:notation "HRAVS:0000022";
+  skos:narrower obo:UO_0000009, obo:UO_0000021, obo:UO_0000022, obo:UO_0000023, obo:UO_0000024;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000009 a skos:Concept;
+  skos:prefLabel "kg"@en;
+  skos:definition "A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France."@en;
+  rdfs:label "kilogram"@en;
+  skos:broader vs:HRAVS_0000022;
+  skos:notation "UO:0000009";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000021 a skos:Concept;
+  skos:prefLabel "g"@en;
+  skos:definition "A mass unit which is equal to one thousandth of a kilogram or 10^[-3] kg."@en;
+  rdfs:label "gram"@en;
+  skos:broader vs:HRAVS_0000022;
+  skos:notation "UO:0000021";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000022 a skos:Concept;
+  skos:prefLabel "mg"@en;
+  skos:definition "A mass unit which is equal to one thousandth of a gram or 10^[-3] g."@en;
+  rdfs:label "milligram"@en;
+  skos:broader vs:HRAVS_0000022;
+  skos:notation "UO:0000022";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000023 a skos:Concept;
+  skos:prefLabel "ug"@en;
+  skos:definition "A mass unit which is equal to one millionth of a gram or 10^[-6] g."@en;
+  rdfs:label "microgram"@en;
+  skos:broader vs:HRAVS_0000022;
+  skos:notation "UO:0000023";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000024 a skos:Concept;
+  skos:prefLabel "ng"@en;
+  skos:definition "A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g."@en;
+  rdfs:label "nanogram"@en;
+  skos:broader vs:HRAVS_0000022;
+  skos:notation "UO:0000024";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000023 a skos:Concept;
+  skos:prefLabel "Unit of Time"@en;
+  skos:definition "This is a set of controlled terms for time unit."@en;
+  skos:broader vs:HRAVS_0000012;
+  skos:notation "HRAVS:0000023";
+  skos:narrower obo:UO_0000031, obo:UO_0000032, obo:UO_0000033, obo:UO_0000035, obo:UO_0000036;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000031 a skos:Concept;
+  skos:prefLabel "minute"@en;
+  skos:definition "A time unit which is equal to 60 seconds."@en;
+  rdfs:label "minute"@en;
+  skos:broader vs:HRAVS_0000023;
+  skos:notation "UO:0000031";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000032 a skos:Concept;
+  skos:prefLabel "hour"@en;
+  skos:definition "A time unit which is equal to 3600 seconds or 60 minutes."@en;
+  rdfs:label "hour"@en;
+  skos:broader vs:HRAVS_0000023;
+  skos:notation "UO:0000032";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000033 a skos:Concept;
+  skos:prefLabel "day"@en;
+  skos:definition "A time unit which is equal to 24 hours."@en;
+  rdfs:label "day"@en;
+  skos:broader vs:HRAVS_0000023;
+  skos:notation "UO:0000033";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000035 a skos:Concept;
+  skos:prefLabel "month"@en;
+  skos:definition "A time unit which is approximately equal to the length of time of one of cycle of the moon's phases which in science is taken to be equal to 30 days."@en;
+  rdfs:label "month"@en;
+  skos:broader vs:HRAVS_0000023;
+  skos:notation "UO:0000035";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000036 a skos:Concept;
+  skos:prefLabel "year"@en;
+  skos:definition "A time unit which is equal to 12 months which in science is taken to be equal to 365.25 days."@en;
+  rdfs:label "year"@en;
+  skos:broader vs:HRAVS_0000023;
+  skos:notation "UO:0000036";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000024 a skos:Concept;
+  skos:prefLabel "Unit of Mass Density"@en;
+  skos:definition "This is a set of controlled terms for mass density"@en;
+  skos:broader vs:HRAVS_0000012;
+  skos:notation "HRAVS:0000024";
+  skos:narrower obo:UO_0000176, obo:UO_0000274, obo:UO_0010050;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000176 a skos:Concept;
+  skos:prefLabel "mg/ml"@en;
+  skos:definition "A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters."@en;
+  rdfs:label "milligram per milliliter"@en;
+  skos:broader vs:HRAVS_0000024;
+  skos:notation "UO:0000176";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0000274 a skos:Concept;
+  skos:prefLabel "ug/ml"@en;
+  skos:definition "A mass unit density which is equal to mass of an object in micrograms divided by the volume in millliters."@en;
+  rdfs:label "microgram per milliliter"@en;
+  skos:broader vs:HRAVS_0000024;
+  skos:notation "UO:0000274";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+obo:UO_0010050 a skos:Concept;
+  skos:prefLabel "ng/ul"@en;
+  skos:definition "A mass unit density which is equal to mass of an object in nanograms divided by the volume in microliters."@en;
+  rdfs:label "nanogram per microliter"@en;
+  skos:broader vs:HRAVS_0000024;
+  skos:notation "UO:0010050";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000013 a skos:Concept;
+  skos:prefLabel "Scientific Instrument Vendor"@en;
+  skos:definition "This is a set of controlled terms for the scientific instrument vendors."@en;
+  skos:notation "HRAVS:0000013";
+  skos:narrower vs:HRAVS_0000025, vs:HRAVS_0000026;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000025 a skos:Concept;
+  skos:prefLabel "Acquisition Instrument Vendor"@en;
+  skos:definition "This is a set of controlled terms for the acquisition instrument vendors."@en;
+  skos:broader vs:HRAVS_0000013;
+  skos:notation "HRAVS:0000025";
+  skos:narrower <https://identifiers.org/RRID:SCR_023609>, <https://identifiers.org/RRID:SCR_023608>,
+    <https://identifiers.org/RRID:SCR_023581>, <https://identifiers.org/RRID:SCR_010233>,
+    <https://identifiers.org/RRID:SCR_023605>, <https://identifiers.org/RRID:SCR_023604>,
+    <https://identifiers.org/RRID:SCR_023603>, <https://identifiers.org/RRID:SCR_023651>,
+    <https://identifiers.org/RRID:SCR_023606>, <https://identifiers.org/RRID:SCR_008452>,
+    <https://identifiers.org/RRID:SCR_023607>, <https://identifiers.org/RRID:SCR_017105>;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023609> a skos:Concept;
+  skos:prefLabel "Andor"@en;
+  skos:definition "Provides development and manufacture of high performance scientific digital cameras, microscopy systems and spectrographs for academic, industrial and government applications."@en;
+  rdfs:label "Andor"@en;
+  skos:broader vs:HRAVS_0000025;
+  skos:notation "RRID:SCR_023609";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023608> a skos:Concept;
+  skos:prefLabel "Bruker Daltonics"@en;
+  skos:definition "Bruker Daltonics is subsidary of Bruker Corporation American. Bruker is manufacturer of scientific instruments for molecular and materials research, as well as for industrial and applied analysis."@en;
+  rdfs:label "Bruker Daltonics"@en;
+  skos:broader vs:HRAVS_0000025;
+  skos:notation "RRID:SCR_023608";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023581> a skos:Concept;
+  skos:prefLabel "Cytiva"@en;
+  skos:definition "Cytiva is the new name of the former GE Healthcare Life Sciences biopharma business following its acquisition by Danaher Corporation, according to an April 1, 2020 announcement. Provider of life sciences brands such as ÄKTA, Amersham, HyClone, MabSelect and Whatman."@en;
+  rdfs:label "Cytiva"@en;
+  skos:broader vs:HRAVS_0000025;
+  skos:notation "RRID:SCR_023581";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_010233> a skos:Concept;
+  skos:prefLabel "Illumina"@en;
+  skos:definition "American company incorporated that develops, manufactures and markets integrated systems for the analysis of genetic variation and biological function. Provides a line of products and services that serve the sequencing, genotyping and gene expression and proteomics markets. Its headquarters are located in San Diego, California."@en;
+  rdfs:label "Illumina"@en;
+  skos:broader vs:HRAVS_0000025;
+  skos:notation "RRID:SCR_010233";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023605> a skos:Concept;
+  skos:prefLabel "Ionpath"@en;
+  skos:definition "Pioneer in high definition spatial proteomics, tissue imaging and analysis to accelerate medical discovery and improve human health. With MIBI technology and expertise of pathology and data science teams, Ionpath provides actionable insights to translational and clinical researchers at leading pharmaceutical, biotechnology, and research organizations in immuno-oncology, immunology, neuroscience, and infectious disease research."@en;
+  rdfs:label "Ionpath"@en;
+  skos:broader vs:HRAVS_0000025;
+  skos:notation "RRID:SCR_023605";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023604> a skos:Concept;
+  skos:prefLabel "Keyence"@en;
+  skos:definition "Direct sales organization that develops and manufactures automation sensors, vision systems, barcode readers, laser markers, measuring instruments, and digital microscopes. Founder Takemitsu Takizaki. Headquarters Osaka, Osaka, Japan."@en;
+  rdfs:label "Keyence"@en;
+  skos:broader vs:HRAVS_0000025;
+  skos:notation "RRID:SCR_023604";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023603> a skos:Concept;
+  skos:prefLabel "Leica Biosystems"@en;
+  skos:definition "Medical devices company that develops and supplies clinical diagnostics to pathology market. It is also research, instrument, and medical device company as well as division of Danaher Corporation with headquarters Wetzlar, Germany."@en;
+  rdfs:label "Leica Biosystems"@en;
+  skos:broader vs:HRAVS_0000025;
+  skos:notation "RRID:SCR_023603";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023651> a skos:Concept;
+  skos:prefLabel "Sciex"@en;
+  skos:definition "Manufacturer of mass spectrometry instrumentation used in biomedical and environmental applications. Originally started by scientists from the University of Toronto Institute for Aerospace Studies, it is now part of Danaher Corporation with the SCIEX R&D division still located in Toronto, Canada."@en;
+  rdfs:label "Sciex"@en;
+  skos:broader vs:HRAVS_0000025;
+  skos:notation "RRID:SCR_023651";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023606> a skos:Concept;
+  skos:prefLabel "Standard BioTools (Fluidigm)"@en;
+  skos:definition "American company engaged in design, manufacture and sale of biological research equipment based on integrated fluidic circuit technology. Founders leveraged their semiconductor experience to create integrated circuits that carried fluids rather than electrons."@en;
+  rdfs:label "Standard BioTools"@en;
+  skos:broader vs:HRAVS_0000025;
+  skos:notation "RRID:SCR_023606";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_008452> a skos:Concept;
+  skos:prefLabel "Thermo Fisher Scientific"@en;
+  skos:definition "Commercial vendor and service provider of laboratory reagents and antibodies. Supplier of scientific instrumentation, reagents and consumables, and software services."@en;
+  rdfs:label "Thermo Fisher Scientific"@en;
+  skos:broader vs:HRAVS_0000025;
+  skos:notation "RRID:SCR_008452";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023607> a skos:Concept;
+  skos:prefLabel "Zeiss Microscopy"@en;
+  skos:definition "Manufacturer of light, electron, X-ray and ion microscope systems. Offers solutions for correlative microscopy. Provides products and services for life sciences, materials and industrial research, as well as education and clinical practice."@en;
+  rdfs:label "Zeiss Microscopy"@en;
+  skos:broader vs:HRAVS_0000025;
+  skos:notation "RRID:SCR_023607";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_017105> a skos:Concept;
+  skos:prefLabel "Hamamatsu"@en;
+  skos:definition "Manufacturer of optical sensors including, photomultiplier tubes, electric light sources, and other optical devices and their applied instruments for scientific, technical and medical use."@en;
+  rdfs:label "Hamamatsu Photonics"@en;
+  skos:broader vs:HRAVS_0000025, vs:HRAVS_0000026;
+  skos:notation "RRID:SCR_017105";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000026 a skos:Concept;
+  skos:prefLabel "Preparation Instrument Vendor"@en;
+  skos:definition "This is a set of controlled terms for the preparation instrument vendors."@en;
+  skos:broader vs:HRAVS_0000013;
+  skos:notation "HRAVS:0000026";
+  skos:narrower <https://identifiers.org/RRID:SCR_017105>, <https://identifiers.org/RRID:SCR_023672>,
+    <https://identifiers.org/RRID:SCR_023734>;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023672> a skos:Concept;
+  skos:prefLabel "10x Genomics"@en;
+  skos:definition "American biotechnology company that designs and manufactures gene sequencing technology used in scientific research."@en;
+  rdfs:label "10x Genomics"@en;
+  skos:broader vs:HRAVS_0000026;
+  skos:notation "RRID:SCR_023672";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023734> a skos:Concept;
+  skos:prefLabel "HTX Technologies"@en;
+  skos:definition "Company offers sample preparation solutions for Mass Spectrometry Imaging. HTX delivers customized solutions for sample preparation and workflow automation of advanced analytical platforms."@en;
+  rdfs:label "HTX Technologies"@en;
+  skos:broader vs:HRAVS_0000026;
+  skos:notation "RRID:SCR_023734";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000014 a skos:Concept;
+  skos:prefLabel "Scientific Instrument Model"@en;
+  skos:definition "This is a set of controlled terms for the instrument models."@en;
+  skos:notation "HRAVS:0000014";
+  skos:narrower vs:HRAVS_0000027, vs:HRAVS_0000028;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000027 a skos:Concept;
+  skos:prefLabel "Acquisition Instrument Model"@en;
+  skos:definition "This is a set of controlled terms for the acquisition instrument models."@en;
+  skos:broader vs:HRAVS_0000014;
+  skos:notation "HRAVS:0000027";
+  skos:narrower <https://identifiers.org/RRID:SCR_023610>, <https://identifiers.org/RRID:SCR_023615>,
+    <https://identifiers.org/RRID:SCR_023616>, <https://identifiers.org/RRID:SCR_023195>,
+    <https://identifiers.org/RRID:SCR_016383>, <https://identifiers.org/RRID:SCR_016386>,
+    <https://identifiers.org/RRID:SCR_023614>, <https://identifiers.org/RRID:SCR_014983>,
+    <https://identifiers.org/RRID:SCR_016381>, <https://identifiers.org/RRID:SCR_016387>,
+    <https://identifiers.org/RRID:SCR_023613>, <https://identifiers.org/RRID:SCR_017202>,
+    <https://identifiers.org/RRID:SCR_023617>, <https://identifiers.org/RRID:SCR_023611>,
+    <https://identifiers.org/RRID:SCR_020517>, <https://identifiers.org/RRID:SCR_023618>,
+    <https://identifiers.org/RRID:SCR_020562>, <https://identifiers.org/RRID:SCR_020565>,
+    <https://identifiers.org/RRID:SCR_020558>, <https://identifiers.org/RRID:SCR_020571>,
+    <https://identifiers.org/RRID:SCR_020927>, <https://identifiers.org/RRID:SCR_023693>,
+    <https://identifiers.org/RRID:SCR_023692>, <https://identifiers.org/RRID:SCR_023694>,
+    <https://identifiers.org/RRID:SCR_023760>, <https://identifiers.org/RRID:SCR_023761>,
+    <https://identifiers.org/RRID:SCR_023762>;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023610> a skos:Concept;
+  skos:prefLabel "Zyla 4.2 sCMOS"@en;
+  skos:definition "Zyla 4.2 PLUS is the latest sCMOS technology advancement from Andor. At its heart, Zyla 4.2 PLUS benefits from latest generation sCMOS sensor technology, delivering a further 10 % boost in QE, resulting in an unprecedented 82% QEmax."@en;
+  rdfs:label "Andor Zyla 4.2 sCMOS"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_023610";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023615> a skos:Concept;
+  skos:prefLabel "MALDI timsTOF Flex Prototype"@en;
+  skos:definition "Instrument for probing molecular content of sample with MALDI-2. The timsTOF fleX is fully functional high speed, high sensitivity ESI instrument for all X-Omics analyses, combined with high spatial resolution MALDI source and stage specifically designed for resolving molecular distributions and bringing spatial dimension to OMICS analyses."@en;
+  rdfs:label "Bruker timsTOF fleX with MALDI-2"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_023615";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023616> a skos:Concept;
+  skos:prefLabel "IN Cell Analyzer 2200"@en;
+  skos:definition "Cell imaging system for fast, automated imaging in fixed and live cells. Instrument can rapidly image cells using laser autofocusing, LED light source and CMOS camera."@en;
+  rdfs:label "GE Healthcare IN Cell Analyzer 2200"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_023616";
+  oboInOwl:hasDbXref "BAO:0150000";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023195> a skos:Concept;
+  skos:prefLabel "Hyperion Imaging System"@en;
+  skos:definition "Imaging system enables comprehensive analysis of cellular phenotypes. Allows access to single cell insights. This includes deeper understanding of intricate spatial relationships of cells, pathways and phenotypes in tissue microenvironment."@en;
+  rdfs:label "Hyperion Imaging System"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_023195";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_016383> a skos:Concept;
+  skos:prefLabel "HiSeq 2500"@en;
+  skos:definition "High-throughput sequencing system. High-quality data using proven Illumina SBS chemistry has made it the instrument of choice for major genome centers and research institutions throughout the world."@en;
+  rdfs:label "Illumina HiSeq 2500 System"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_016383";
+  oboInOwl:hasDbXref "OBI:0002002";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_016386> a skos:Concept;
+  skos:prefLabel "HiSeq 4000"@en;
+  skos:definition "Sequencer that uses patterned flow cell technology to provide high-performance sequencing. Perform production-scale, high-throughput exome or transcriptome sequencing projects quickly and economically."@en;
+  rdfs:label "Illumina HiSeq 3000/HiSeq 4000 System"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_016386";
+  oboInOwl:hasDbXref "OBI:0002049";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023614> a skos:Concept;
+  skos:prefLabel "NextSeq 2000"@en;
+  skos:definition "Sequencing system supports range of methods such as exome sequencing, target enrichment, single-cell profiling."@en;
+  rdfs:label "Illumina NextSeq 2000 System"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_023614";
+  oboInOwl:hasDbXref "EFO:0010963";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_014983> a skos:Concept;
+  skos:prefLabel "NextSeq 500"@en;
+  skos:definition "High-throughput sequencing machine which enables sequencing of exomes, whole genomes, and transcriptomes. It also provides flow cell types, real-time analysis, and integration with Illumina's BaseSpace computing environment."@en;
+  rdfs:label "Illumina NextSeq 500 System"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_014983";
+  oboInOwl:hasDbXref "OBI:0002021", "EFO:0009173";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_016381> a skos:Concept;
+  skos:prefLabel "NextSeq 550"@en;
+  skos:definition "The NextSeq 550 System brings the power of a high-throughput sequencing system to your benchtop. With tunable output and high data quality, it provides the flexible power you need for whole-genome, transcriptome, and targeted resequencing."@en;
+  rdfs:label "Illumina NextSeq 550 System"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_016381";
+  oboInOwl:hasDbXref "OBI:0003387", "EFO:0008566";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_016387> a skos:Concept;
+  skos:prefLabel "NovaSeq 6000"@en;
+  skos:definition "System unleashes groundbreaking innovations that leverage our proven technology. Now you can get scalable throughput and flexibility for virtually any sequencing method, genome, and scale of project."@en;
+  rdfs:label "Illumina NovaSeq 6000 System"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_016387";
+  oboInOwl:hasDbXref "OBI:0002630", "EFO:0008637";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023613> a skos:Concept;
+  skos:prefLabel "MIBIscope"@en;
+  skos:definition "Imaging platform, enabling phenotypic profiling and spatial analysis of tissue microenvironment. Enables over 40 markers to be visualized simultaneously with single step staining and single step imaging."@en;
+  rdfs:label "Ionpath MIBIscope System"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_023613";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_017202> a skos:Concept;
+  skos:prefLabel "BZ-X710"@en;
+  skos:definition "All in one fluorescence microscope BZ-X710 by Keyence, Japan."@en;
+  rdfs:label "Keyence BZ-X710 fluorescent microscope"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_017202";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023617> a skos:Concept;
+  skos:prefLabel "BZ-X800"@en;
+  skos:definition "Automated high-resolution microscope for Life Science research."@en;
+  rdfs:label "Keyence BZ-X800 fluorescent microscope"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_023617";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023611> a skos:Concept;
+  skos:prefLabel "SCN400"@en;
+  skos:definition "Provides fully digitized image of speciment that can be viewed and edited from virtually anywhere."@en;
+  rdfs:label "Leica SCN400 slide scanner"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_023611";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_020517> a skos:Concept;
+  skos:prefLabel "QTRAP 5500"@en;
+  skos:definition "QTRAP 5500 system Performs multiple reaction monitoring (MRM) for quantitation using this high-sensitivity triple quadrupole system. Identify, characterize, and quantitate metabolites more quickly and easily.Discover and quantitate targeted biomarkers. Enable high-sensitivity full-scan MS, MS/MS, and MS3 with high-selectivity from true triple quadrupole precursor ion (PI) and neutral loss (NL) scans."@en;
+  rdfs:label "Sciex QTRAP 5500 mass spectrometer"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_020517";
+  oboInOwl:hasDbXref "MS:1000931";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023618> a skos:Concept;
+  skos:prefLabel "Orbitrap Eclipse Tribrid"@en;
+  skos:definition "Mass spectrometer designed for most difficult analytical challenges. Incorporates inventions in ion transmission and control, extended m/z range, and real-time decision making. System suited for proteomics, structural biology, small-molecule, and biopharmaceutical characterization experiments."@en;
+  rdfs:label "Thermo Fisher Scientific Orbitrap Eclipse Tribrid mass spectrometer"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_023618";
+  oboInOwl:hasDbXref "MS:1003029";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_020562> a skos:Concept;
+  skos:prefLabel "Orbitrap Fusion Lumos Tribrid"@en;
+  skos:definition "Spectrometer performs analysis including low level PTM analysis, multiplexed relative quantitation using isobaric tags, intact protein characterization, and MSn analysis of small molecules. System incorporates the brightest ion source, segmented quadrupole mass filter with improved selectivity and ion transmission, Advanced Vacuum Technology, and ETD HD."@en;
+  rdfs:label "Thermo Fisher Scientific Orbitrap Fusion Lumos Tribrid mass spectrometer"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_020562";
+  oboInOwl:hasDbXref "MS:1002732";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_020565> a skos:Concept;
+  skos:prefLabel "Q Exactive"@en;
+  skos:definition "Identify, quantify and confirm more compounds rapidly and with confidence using the Thermo Scientific Q Exactive Hybrid Quadrupole-Orbitrap Mass Spectrometer. This benchtop LC-MS/MS system combines quadruple precursor ion selection with high-resolution, accurate-mass (HRAM) Orbitrap detection to deliver performance and versatility. The Q Exactive Mass Spectrometer is equally useful for untargeted or targeted screening and a broad range of qualitative and quantitative applications in drug discovery, proteomics, environmental and food safety, clinical research and forensic toxicology."@en;
+  rdfs:label "Thermo Fisher Scientific Q Exactive GC Orbitrap mass spectrometry"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_020565";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_020558> a skos:Concept;
+  skos:prefLabel "Q Exactive HF"@en;
+  skos:definition "Identify and quantify more proteins, peptides, lipids, glycans and small molecules accurately and in less time with the Thermo Scientific Q Exactive HF hybrid quadrupole-Orbitrap mass spectrometer. The Q Exactive HF system combines a state-of-the-art segmented quadrupole for high-performance precursor ion selection with a high-resolution, accurate-mass (HR/AM) ultra-high-field Orbitrap mass analyzer to deliver a superior combination of scan speed, resolving power, mass accuracy, spectral quality and sensitivity. Identify, quantify and confirm in a single analysis with a single instrument with the Q Exactive HF mass spectrometer."@en;
+  rdfs:label "Thermo Fisher Scientific Q Exactive HF Hybrid Quadrupole-Orbitrap mass spectrometer"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_020558";
+  oboInOwl:hasDbXref "MS:1002523";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_020571> a skos:Concept;
+  skos:prefLabel "Q Exactive UHMR"@en;
+  skos:definition "Perform the highest - quality native intact mass and top-down analysis in structural biology and biopharma research. The Thermo Scientific Q Exactive UHMR (Ultra-High Mass Range) Hybrid Quadrupole-Orbitrap Mass Spectrometer is the first UHMR MS to combine substantially increased sensitivity and mass resolution at high m/z, MS2, and psuedo-MS3 capabilities in a single platform."@en;
+  rdfs:label "Thermo Scientific Q Exactive UHMR Hybrid Quadrupole-Orbitrap Mass Spectrometer"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_020571";
+  oboInOwl:hasDbXref "MS:1003245";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_020927> a skos:Concept;
+  skos:prefLabel "Axio Scan.Z1"@en;
+  skos:definition "Digitize your specimens with the Axio Scan.Z1 slide scanner and create high-quality virtual slides. Axio Scan.Z1 tackles the most demanding virtual microscopy research tasks as easily as it handles your routine work. The software module ZEN slidescan is designed specifically for the workflow of capturing virtual slides, while ZEN image analysis tools prepare your data accurately. Organize your virtual slides with ZEN browser, the web-based database, then view your data from any location using any operating system , or share virtual microscopy images online with colleagues and organize your projects, even when you are on the go."@en;
+  rdfs:label "Zeiss Axio Scan.Z1 Slide Scanner"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_020927";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023693> a skos:Concept;
+  skos:prefLabel "Zeiss Axio Observer 3"@en;
+  skos:definition "Inverted microscope Axio Observer 3 for transmitted light brightfield LED and differential interference contrast. Used for demanding multimodal imaging."@en;
+  rdfs:label "Zeiss Axio Observer 3"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_023693";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023692> a skos:Concept;
+  skos:prefLabel "Zeiss Axio Observer 5"@en;
+  skos:definition "Inverted microscope Axio Observer 5 for transmitted light brightfield LED and differential interference contrast. Used for demanding multimodal imaging."@en;
+  rdfs:label "Zeiss Axio Observer 5"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_023692";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023694> a skos:Concept;
+  skos:prefLabel "Zeiss Axio Observer 7"@en;
+  skos:definition "Inverted microscope Axio Observer 7 for transmitted light brightfield LED and differential interference contrast. Used for demanding multimodal imaging."@en;
+  rdfs:label "Zeiss Axio Observer 7"@en;
+  skos:broader vs:HRAVS_0000027;
+  skos:notation "RRID:SCR_023694";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023760> a skos:Concept;
+  skos:prefLabel "NanoZoomer S210"@en;
+  skos:definition "NanoZoomer series is family of whole slide scanners that rapidly scan glass slides to convert them to digital data. NanoZoomer S210 provides high performance capable of handling large number of slides."@en;
+  rdfs:label "Hamamatsu NanoZoomer S210 Digital slide scanner"@en;
+  skos:broader vs:HRAVS_0000027, vs:HRAVS_0000028;
+  skos:notation "RRID:SCR_023760";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023761> a skos:Concept;
+  skos:prefLabel "NanoZoomer S360"@en;
+  skos:definition "NanoZoomer series is family of whole slide scanners that rapidly scan glass slides to convert them to digital data. NanoZoomer S360 is ideal for use in hospitals and clinical laboratories."@en;
+  rdfs:label "Hamamatsu NanoZoomer S360 Digital slide scanner"@en;
+  skos:broader vs:HRAVS_0000027, vs:HRAVS_0000028;
+  skos:notation "RRID:SCR_023761";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023762> a skos:Concept;
+  skos:prefLabel "NanoZoomer S60"@en;
+  skos:definition "NanoZoomer series is family of whole slide scanners that rapidly scan glass slides to convert them to digital data. NanoZoomer S60 supports brightfield imaging, fluorescence imaging and double size slides."@en;
+  rdfs:label "Hamamatsu NanoZoomer S60 Digital slide scanner"@en;
+  skos:broader vs:HRAVS_0000027, vs:HRAVS_0000028;
+  skos:notation "RRID:SCR_023762";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000028 a skos:Concept;
+  skos:prefLabel "Preparation Instrument Model"@en;
+  skos:definition "This is a set of controlled terms for the preparation instrument models."@en;
+  skos:broader vs:HRAVS_0000014;
+  skos:notation "HRAVS:0000028";
+  skos:narrower <https://identifiers.org/RRID:SCR_023760>, <https://identifiers.org/RRID:SCR_023761>,
+    <https://identifiers.org/RRID:SCR_023762>, <https://identifiers.org/RRID:SCR_023732>,
+    <https://identifiers.org/RRID:SCR_023731>, <https://identifiers.org/RRID:SCR_023733>;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023732> a skos:Concept;
+  skos:prefLabel "HTX TM-Sprayer"@en;
+  skos:definition "Allows users to adjust both gas flow rate and nozzle velocity to control drying time, preventing analyte delocalization and formation of large matrix crystals, known to create hot spots on MALDI images. Allows to heat matrix solution as it is being applied to their sample. By increasing temperature of matrix solution, absorption of matrix into sample is increased, resulting in greater MALDI image resolution."@en;
+  rdfs:label "HTX TM-Sprayer"@en;
+  skos:broader vs:HRAVS_0000028;
+  skos:notation "RRID:SCR_023732";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023731> a skos:Concept;
+  skos:prefLabel "HTX M3+ Sprayer"@en;
+  skos:definition "Sample preparation platform offering automated advanced MALDI matrix sprayer."@en;
+  rdfs:label "HTX M3+ Sprayer"@en;
+  skos:broader vs:HRAVS_0000028;
+  skos:notation "RRID:SCR_023731";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+<https://identifiers.org/RRID:SCR_023733> a skos:Concept;
+  skos:prefLabel "HTX M5 Sprayer"@en;
+  skos:definition "Sprayer builds on capabilities of HTX TM-Sprayer providing innovative M5 chassis, high velocity stage and heated sample holder drawer. Sample plate holder is mounted on drawer mechanism to allow easy loading of samples, better protection of user and better alignment of various plate types. New High-Velocity XY stage allows nozzle displacement speed of up to 5,600mm/min and expands process range. Super dry spray can be achieved at high flow rates of solvent further improving instrument performance. E/Z trough gutter design improves chemical containement and is easy to remove and clean. Bulkhead connectors are directly mounted on it to also allow easy access to in line filter."@en;
+  rdfs:label "HTX M5 Sprayer"@en;
+  skos:broader vs:HRAVS_0000028;
+  skos:notation "RRID:SCR_023733";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000015 a skos:Concept;
+  skos:prefLabel "Person"@en;
+  skos:definition "This is a set of actual people names involved in HuBMAP project."@en;
+  skos:notation "HRAVS:0000015";
+  skos:narrower vs:HRAVS_0000029, vs:HRAVS_0000030;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000029 a skos:Concept;
+  skos:prefLabel "Principal Investigator"@en;
+  skos:definition "This is a set of actual people names working as a principal investigator."@en;
+  skos:broader vs:HRAVS_0000015;
+  skos:notation "HRAVS:0000029";
+  skos:narrower orcid:0000-0002-6325-7861, orcid:0000-0002-3522-8932, orcid:0000-0002-8105-4347,
+    orcid:0000-0002-2794-5165, orcid:0000-0001-6638-683X, orcid:0000-0002-8862-9043, orcid:0000-0003-4649-546X,
+    orcid:0000-0001-9198-5498, orcid:0000-0002-2317-6194, orcid:0000-0002-7596-5224, orcid:0000-0001-9853-5457,
+    orcid:0000-0002-7154-5361, orcid:0000-0002-6299-8799, orcid:0000-0003-0784-7987, orcid:0000-0002-8815-3372,
+    orcid:0000-0003-2878-9296, orcid:0000-0003-1409-3095, orcid:0000-0001-6419-7453, orcid:0000-0002-7726-8246,
+    orcid:0000-0003-1980-6840, orcid:0000-0001-6147-3045;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-6325-7861 a skos:Concept;
+  skos:prefLabel "Bernd Bodenmiller"@en;
+  skos:definition "Bernd Bodenmiller is a quantitative biologist who develops novel experimental and computational approaches for the quantitative analysis of tumor ecosystems to improve our understanding of the mechanisms of tumor development for the benefit of patients. He is the founding director of the Department of Quantitative Biomedicine (DQBM) at the University of Zurich, which fosters research and education at the interface of biomedical research, biotechnology, and computational biology to guide development of next-generation precision medicine. Prof. Bodenmiller obtained his PhD at ETH Zürich and he performed his postdoctoral training at Stanford University. In 2013 he became SNF/ERC Assistant Professor at the University of Zurich. In 2020 he was appointed as Dual Professor for Quantitative Biomedicine at the UZH and at ETH Zurich. His group pioneered the development of imaging mass cytometry, an approach that enables simultaneously imaging of over 40 proteins and transcripts in tumor tissues as well as many computational tools for spatial tissue analysis. His groups applies these methods to unravel how cells in the tumor ecosystem drive cancer development to identify mechanisms that might be exploited for therapeutic targeting."@en;
+  rdfs:label "Bernd Bodenmiller"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0002-6325-7861";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-3522-8932 a skos:Concept;
+  skos:prefLabel "Clive Wasserfall"@en;
+  skos:definition "Clive Wasserfall trained in clinical laboratory medicine in South Africa prior to pursuing a MS in clinical chemistry at the University of Florida and a PhD in immunology at the Technical University of Dresden. Located at the University of Florida in the USA my laboratory focus is on the immunopathogenesis of Type 1 Diabetes (T1D)."@en;
+  rdfs:label "Clive Wasserfall"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0002-3522-8932";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-8105-4347 a skos:Concept;
+  skos:prefLabel "Cole Trapnell"@en;
+  rdfs:label "Cole Trapnell"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0002-8105-4347";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-2794-5165 a skos:Concept;
+  skos:prefLabel "Evan Macosko"@en;
+  rdfs:label "Evan Macosko"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0002-2794-5165";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-6638-683X a skos:Concept;
+  skos:prefLabel "Fiona Ginty"@en;
+  rdfs:label "Fiona Ginty"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0001-6638-683X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-8862-9043 a skos:Concept;
+  skos:prefLabel "Garry P. Nolan"@en;
+  skos:definition "Dr. Nolan is the Rachford and Carlota A. Harris Professor in the Department of Pathology at Stanford University School of Medicine. He trained with Leonard Herzenberg (for his Ph.D.) and Nobelist Dr. David Baltimore (for postdoctoral work for the first cloning/characterization of NF-B p65/RelA and the development of rapid retroviral production systems). He has published over 300 research papers, is the holder of 40US patents, and has been honored as one of the top 25 inventors at Stanford University. Dr. Nolan is the first recipient of the Teal Innovator Award (2012) from the Department of Defense (a $3.3 million grant for advanced studies in ovarian cancer), the first recipient of an FDA BAAA to an academic institution ($3 million for “Bio-agent protection” grant from the FDA for a “Cross-Species Immune System Reference”), received the award for “Outstanding Research Achievement in 2011” from the Nature Publishing Group for his development of CyTOF applications in the immune system, Elected as a Fellows of the American Institute for Medical and Biological Engineering, and is the recipient of the Ernest Cotlove Award from the Academy of Clinical Laboratory Physicians & Scientists. Dr. Nolan is an outspoken proponent of translating public & private investment in basic research to serve the public welfare. Dr. Nolan was the founder of Rigel Inc. (NASDAQ: RIGL), and Nodality, Inc., a diagnostics development company and serves on the Boards of Directors of several companies, as well as consults for other biotechnology companies. DVS Sciences, on which he is Chair of the Scientific Advisory Board, was recently sold (link) underscoring the considerable interest in the technology in academic and clinical venues. He was the co-Founder of BINA, a sequence analysis company sold to Roche, and is the co-Founder of Apprise, Akoya, and IonPath—all companies in the single cell analysis or pathology imaging arena. The latter 3 companies are either venture funded or recently acquired. Dr. Nolan’s areas of research include hematopoiesis, cancer and leukemia, autoimmunity and inflammation, and computational approaches for network and systems immunology. His most recent efforts are focused on a single cell analysis advance using a mass spectrometry-flow cytometry hybrid device, the so-call “CyTOF”. The approach uses an advanced ion plasma source to determine the levels of tagged reagents bound to cells—enabling a vast increase in the number of parameters that can be measured per cell. Another recent innovation is termed molecular ion beam imaging (MIBI) a system that also uses mass tags that will enable sub-light imaging (50 nm resolution) of tissue sections as well as the CODEX system enabling 50 or more parameters per image. Dr. Nolan’s efforts are to enable a deeper understanding not only of normal immune function, trauma, and other inflammatory events but also detailed substructures of leukemias and solid cancers—which will enable wholly new understandings that will enable better management of disease and clinical outcomes."@en;
+  rdfs:label "Garry Nolan"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0002-8862-9043";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-4649-546X a skos:Concept;
+  skos:prefLabel "Ian McGilvray"@en;
+  rdfs:label "Ian McGilvray"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0003-4649-546X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9198-5498 a skos:Concept;
+  skos:prefLabel "Jeffrey M. Spraggins"@en;
+  rdfs:label "Jeffrey Spraggins"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0001-9198-5498";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-2317-6194 a skos:Concept;
+  skos:prefLabel "Kevin J. Otto"@en;
+  rdfs:label "Kevin Otto"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0002-2317-6194";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-7596-5224 a skos:Concept;
+  skos:prefLabel "Kun Zhang"@en;
+  rdfs:label "Kun Zhang"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0002-7596-5224";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9853-5457 a skos:Concept;
+  skos:prefLabel "Ljiljana Pasa-Tolic"@en;
+  rdfs:label "Ljiljana Pasa-Tolic"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0001-9853-5457";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-7154-5361 a skos:Concept;
+  skos:prefLabel "Long Cai"@en;
+  rdfs:label "Long Cai"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0002-7154-5361";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-6299-8799 a skos:Concept;
+  skos:prefLabel "Martin Lotz"@en;
+  rdfs:label "Martin Lotz"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0002-6299-8799";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-0784-7987 a skos:Concept;
+  skos:prefLabel "Michael Snyder"@en;
+  rdfs:label "Michael Snyder"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0003-0784-7987";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-8815-3372 a skos:Concept;
+  skos:prefLabel "Neil L. Kelleher"@en;
+  rdfs:label "Neil Kelleher"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0002-8815-3372";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2878-9296 a skos:Concept;
+  skos:prefLabel "Todd Brusko"@en;
+  rdfs:label "Todd Brusko"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0003-2878-9296";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-1409-3095 a skos:Concept;
+  skos:prefLabel "William Greenleaf"@en;
+  rdfs:label "William Greenleaf"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0003-1409-3095";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-6419-7453 a skos:Concept;
+  skos:prefLabel "Sheng Zhong"@en;
+  rdfs:label "Sheng Zhong"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0001-6419-7453";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-7726-8246 a skos:Concept;
+  skos:prefLabel "Junhyong Kim"@en;
+  rdfs:label "Junhyong Kim"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0002-7726-8246";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-1980-6840 a skos:Concept;
+  skos:prefLabel "Kathleen O'Neill"@en;
+  rdfs:label "Kathleen O'Neill"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0003-1980-6840";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-6147-3045 a skos:Concept;
+  skos:prefLabel "Denis Wirtz"@en;
+  rdfs:label "Denis Wirtz"@en;
+  skos:broader vs:HRAVS_0000029;
+  skos:notation "0000-0001-6147-3045";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000030 a skos:Concept;
+  skos:prefLabel "Operator"@en;
+  skos:definition "This is a set of actual people names working as a lab operator."@en;
+  skos:broader vs:HRAVS_0000015;
+  skos:notation "HRAVS:0000030";
+  skos:narrower orcid:0000-0003-3247-0798, orcid:0000-0003-3698-8527, orcid:0000-0001-8618-0935,
+    orcid:0000-0001-8564-2253, orcid:0000-0003-2966-4145, orcid:0000-0001-9944-8769, orcid:0000-0001-7768-0209,
+    orcid:0000-0002-0646-1815, orcid:0000-0003-4034-1195, orcid:0000-0003-4009-0912, orcid:0000-0003-1516-8802,
+    orcid:0000-0001-5480-4192, orcid:0000-0002-6601-6369, orcid:0000-0002-8637-9044, orcid:0000-0001-8895-2206,
+    orcid:0000-0003-2496-3154, orcid:0000-0002-0594-7688, orcid:0000-0002-3532-3868, orcid:0000-0002-5631-512X,
+    orcid:0000-0002-4549-2585, orcid:0000-0002-0024-1627, orcid:0000-0002-3580-1348, orcid:0000-0002-1792-1768,
+    orcid:0000-0002-7334-4571, orcid:0000-0001-6355-5677, orcid:0000-0003-4039-9768, orcid:0000-0001-6111-419X,
+    orcid:0000-0001-8435-4073, orcid:0000-0002-6917-0580, orcid:0000-0003-4102-6947, orcid:0000-0001-6355-2134,
+    orcid:0000-0001-5737-7173, orcid:0000-0002-8464-6081, orcid:0000-0003-4468-8276, orcid:0000-0002-3866-0923,
+    orcid:0000-0001-9652-4885, orcid:0000-0002-8398-8389, orcid:0000-0003-0427-0262, orcid:0000-0001-6057-4119,
+    orcid:0000-0002-0746-927X, orcid:0000-0002-5739-4923, orcid:0000-0002-0571-0285, orcid:0000-0002-9185-3994,
+    orcid:0000-0002-1134-8585, orcid:0000-0001-9813-0433, orcid:0000-0001-7945-9620, orcid:0000-0003-1653-902X,
+    orcid:0000-0002-6095-2797, orcid:0000-0002-6078-3321, orcid:0000-0003-1411-0465, orcid:0000-0002-0284-8342,
+    orcid:0000-0002-9115-9345, orcid:0000-0002-4056-2695, orcid:0000-0002-1799-4457, orcid:0000-0002-9195-7478,
+    orcid:0000-0002-4745-8129, orcid:0000-0003-2308-3649, orcid:0000-0003-3052-0253, orcid:0000-0003-0185-8861,
+    orcid:0000-0003-0478-8520, orcid:0000-0001-9527-8723, orcid:0000-0001-9309-9297, orcid:0000-0003-3748-5518,
+    orcid:0000-0003-4265-7492, orcid:0000-0001-7815-2387, orcid:0000-0002-0374-2283, orcid:0000-0001-9453-0747,
+    orcid:0000-0002-3598-0219, orcid:0000-0001-9668-044X, orcid:0000-0003-4519-5684, orcid:0000-0002-5823-1026,
+    orcid:0000-0002-8460-8229, orcid:0000-0001-5124-9883, orcid:0000-0001-9033-3623, orcid:0000-0001-8594-9888,
+    orcid:0000-0001-6665-6596, orcid:0000-0002-4739-2166, orcid:0000-0002-9800-9251, orcid:0000-0003-0640-7277,
+    orcid:0000-0002-1516-1865, orcid:0000-0001-9699-0931, orcid:0000-0001-8977-6590, orcid:0000-0003-3067-1238,
+    orcid:0000-0002-8928-741X, orcid:0000-0001-5903-2291, orcid:0000-0003-4109-7710, orcid:0000-0002-7792-3749,
+    orcid:0000-0002-5328-0451, orcid:0000-0001-9961-7673, orcid:0000-0002-9949-1123, orcid:0000-0002-9580-3951,
+    orcid:0000-0002-0776-2695, orcid:0000-0002-4533-9644, orcid:0000-0003-2620-4928, orcid:0000-0001-8458-1364,
+    orcid:0000-0002-0135-7859, orcid:0000-0002-3487-7199, orcid:0000-0001-9678-5161, orcid:0000-0003-1669-7837,
+    orcid:0000-0002-3524-9776, orcid:0000-0001-8141-064X, orcid:0000-0003-0767-4617, orcid:0000-0002-1088-698X,
+    orcid:0000-0002-6799-6303, orcid:0000-0001-7405-3146, orcid:0000-0001-9740-8261, orcid:0000-0002-8442-8674,
+    orcid:0000-0002-9143-6509, orcid:0000-0001-7524-8260, orcid:0000-0002-1884-6405, orcid:0000-0002-9515-3493,
+    orcid:0000-0003-2760-0586, orcid:0000-0002-4331-2202, orcid:0000-0003-0589-1757, orcid:0000-0003-4912-8059,
+    orcid:0000-0002-7250-3569, orcid:0000-0001-8489-4782, orcid:0000-0001-7926-1673, orcid:0000-0003-3003-874X,
+    orcid:0000-0002-4326-0887, orcid:0000-0003-2874-1807, orcid:0000-0002-0965-9528, orcid:0000-0002-1909-9739,
+    orcid:0000-0002-1210-7169, orcid:0000-0001-5914-0081, orcid:0000-0002-1602-2082, orcid:0000-0002-2483-4216,
+    orcid:0000-0002-4015-3066, orcid:0000-0002-7841-3740, orcid:0000-0002-2003-2865, orcid:0000-0002-9138-4913,
+    orcid:0000-0003-1616-8353, orcid:0000-0003-3575-3224, orcid:0000-0001-8464-3799, orcid:0000-0002-0064-1583,
+    orcid:0000-0002-9435-2597, orcid:0000-0001-5964-5899, orcid:0000-0002-5267-7289, orcid:0000-0002-2451-0633,
+    orcid:0000-0003-3027-8989, orcid:0000-0003-0327-8297, orcid:0000-0001-6410-0682, orcid:0000-0002-7836-4379,
+    orcid:0000-0002-1305-285X, orcid:0000-0003-4272-1095, orcid:0000-0002-0985-3347, orcid:0000-0002-1321-4417,
+    orcid:0000-0002-6036-5875, orcid:0000-0003-2184-7238, orcid:0000-0003-2798-919X, orcid:0000-0002-2232-7130,
+    orcid:0000-0002-0349-235X, orcid:0000-0003-3658-5074, orcid:0000-0002-1352-4378, orcid:0000-0001-8025-0883,
+    orcid:0000-0003-1229-4897, orcid:0000-0001-5859-3310, orcid:0000-0003-1635-8675, orcid:0000-0001-7428-7647,
+    orcid:0000-0002-7306-9186, orcid:0000-0002-3957-8120, orcid:0000-0003-2406-5303, orcid:0000-0001-5779-8525,
+    orcid:0000-0003-2684-7122, orcid:0000-0003-2804-127X, orcid:0000-0001-7282-0487, orcid:0000-0001-7512-4081,
+    orcid:0000-0001-6105-6890, orcid:0000-0002-0897-2918, orcid:0000-0003-0118-0413, orcid:0000-0002-4527-4764,
+    orcid:0000-0002-0680-7652, orcid:0000-0003-3939-3561, orcid:0000-0002-8036-1425, orcid:0000-0002-2730-1482,
+    orcid:0000-0002-2244-6703, orcid:0000-0001-8034-7685, orcid:0000-0002-5490-2750, orcid:0000-0003-4645-3614,
+    orcid:0000-0003-2222-4630, orcid:0000-0001-7122-4448, orcid:0000-0002-2809-3187, orcid:0000-0001-7694-5164,
+    orcid:0000-0001-7344-7207, orcid:0000-0002-5393-2827, orcid:0000-0003-1059-5653, orcid:0000-0001-7876-5060,
+    orcid:0000-0002-5891-3502, orcid:0000-0001-8866-5223, orcid:0000-0002-8124-0457, orcid:0000-0002-0317-7608,
+    orcid:0000-0002-5416-0566, orcid:0000-0001-6093-6001, orcid:0000-0003-0523-6197, orcid:0000-0003-3617-2472,
+    orcid:0000-0003-2941-5771, orcid:0000-0002-5024-0278, orcid:0000-0002-6116-5058, orcid:0009-0003-6552-821X,
+    orcid:0009-0005-2286-9078, orcid:0000-0003-0540-631X, orcid:0000-0002-8849-808X, orcid:0000-0001-7677-8386,
+    orcid:0000-0003-2165-9456;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-3247-0798 a skos:Concept;
+  skos:prefLabel "Aaron Horning"@en;
+  rdfs:label "Aaron Horning"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-3247-0798";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-3698-8527 a skos:Concept;
+  skos:prefLabel "Agnes B. Fogo"@en;
+  rdfs:label "Agnes Fogo"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-3698-8527";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8618-0935 a skos:Concept;
+  skos:prefLabel "Alex Corwin"@en;
+  rdfs:label "Alex Corwin"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8618-0935";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8564-2253 a skos:Concept;
+  skos:prefLabel "Amanda Knoten"@en;
+  rdfs:label "Amanda Knoten"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8564-2253";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2966-4145 a skos:Concept;
+  skos:prefLabel "Anand Ghanekar"@en;
+  rdfs:label "Anand Ghanekar"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2966-4145";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9944-8769 a skos:Concept;
+  skos:prefLabel "Annika Weimer"@en;
+  rdfs:label "Annika Weimer"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-9944-8769";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7768-0209 a skos:Concept;
+  skos:prefLabel "Anup Sood"@en;
+  rdfs:label "Anup Sood"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7768-0209";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0646-1815 a skos:Concept;
+  skos:prefLabel "Aubrianna Decker"@en;
+  rdfs:label "Aubrianna Decker"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0646-1815";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-4034-1195 a skos:Concept;
+  skos:prefLabel "Basil Michael"@en;
+  rdfs:label "Basil Michael"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-4034-1195";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-4009-0912 a skos:Concept;
+  skos:prefLabel "Basil Michael"@en;
+  rdfs:label "Basil Michael"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-4009-0912";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-1516-8802 a skos:Concept;
+  skos:prefLabel "Bei Wei"@en;
+  rdfs:label "Bei Wei"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-1516-8802";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-5480-4192 a skos:Concept;
+  skos:prefLabel "Benjamin J. Des Soye"@en;
+  rdfs:label "Benjamin Des"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-5480-4192";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-6601-6369 a skos:Concept;
+  skos:prefLabel "Blair K. Gage"@en;
+  rdfs:label "Blair Gage"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-6601-6369";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-8637-9044 a skos:Concept;
+  skos:prefLabel "Blue B. Lake"@en;
+  rdfs:label "Blue Lake"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-8637-9044";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8895-2206 a skos:Concept;
+  skos:prefLabel "Bo Zhang"@en;
+  rdfs:label "Bo Zhang"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8895-2206";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2496-3154 a skos:Concept;
+  skos:prefLabel "Brendan T. Innes"@en;
+  rdfs:label "Brendan Innes"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2496-3154";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0594-7688 a skos:Concept;
+  skos:prefLabel "Brent Ewing"@en;
+  rdfs:label "Brent Ewing"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0594-7688";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-3532-3868 a skos:Concept;
+  skos:prefLabel "Brent Stockwell"@en;
+  rdfs:label "Brent Stockwell"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-3532-3868";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-5631-512X a skos:Concept;
+  skos:prefLabel "Bryon S. Drown"@en;
+  rdfs:label "Bryon Drown"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-5631-512X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-4549-2585 a skos:Concept;
+  skos:prefLabel "Cameron M Lloyd-Jones"@en;
+  rdfs:label "Cameron Lloyd-Jones"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-4549-2585";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0024-1627 a skos:Concept;
+  skos:prefLabel "Chakra Chennubhotla"@en;
+  rdfs:label "Chakra Chennubhotla"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0024-1627";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-3580-1348 a skos:Concept;
+  skos:prefLabel "Chiara Caraccio"@en;
+  rdfs:label "Chiara Caraccio"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-3580-1348";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-1792-1768 a skos:Concept;
+  skos:prefLabel "Christian Schürch"@en;
+  rdfs:label "Christian Schürch"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-1792-1768";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-7334-4571 a skos:Concept;
+  skos:prefLabel "Christine Surrette"@en;
+  rdfs:label "Christine Surrette"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-7334-4571";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-6355-5677 a skos:Concept;
+  skos:prefLabel "Chrystal Chadwick"@en;
+  rdfs:label "Chrystal Chadwick"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-6355-5677";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-4039-9768 a skos:Concept;
+  skos:prefLabel "Chuck McCallum"@en;
+  rdfs:label "Chuck McCallum"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-4039-9768";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-6111-419X a skos:Concept;
+  skos:prefLabel "Cory Poole"@en;
+  rdfs:label "Cory Poole"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-6111-419X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8435-4073 a skos:Concept;
+  skos:prefLabel "Damra Camat"@en;
+  rdfs:label "Damra Camat"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8435-4073";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-6917-0580 a skos:Concept;
+  skos:prefLabel "Dana L. Jackson"@en;
+  rdfs:label "Dana Jackson"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-6917-0580";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-4102-6947 a skos:Concept;
+  skos:prefLabel "Daniel Jacobsen"@en;
+  rdfs:label "Daniel Jacobsen"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-4102-6947";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-6355-2134 a skos:Concept;
+  skos:prefLabel "Danielle Gutierrez"@en;
+  rdfs:label "Danielle Gutierrez"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-6355-2134";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-5737-7173 a skos:Concept;
+  skos:prefLabel "David Degnan"@en;
+  rdfs:label "David Degnan"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-5737-7173";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-8464-6081 a skos:Concept;
+  skos:prefLabel "David F. Read"@en;
+  rdfs:label "David Read"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-8464-6081";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-4468-8276 a skos:Concept;
+  skos:prefLabel "David Grant"@en;
+  rdfs:label "David Grant"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-4468-8276";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-3866-0923 a skos:Concept;
+  skos:prefLabel "David M.G. Anderson"@en;
+  rdfs:label "David Anderson"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-3866-0923";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9652-4885 a skos:Concept;
+  skos:prefLabel "Derek Chen"@en;
+  rdfs:label "Derek Chen"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-9652-4885";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-8398-8389 a skos:Concept;
+  skos:prefLabel "Diana R. ODay"@en;
+  rdfs:label "Diana ODay"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-8398-8389";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-0427-0262 a skos:Concept;
+  skos:prefLabel "Diane Salamon"@en;
+  rdfs:label "Diane Salamon"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-0427-0262";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-6057-4119 a skos:Concept;
+  skos:prefLabel "Dinh H. Diep"@en;
+  rdfs:label "Dinh Diep"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-6057-4119";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0746-927X a skos:Concept;
+  skos:prefLabel "Douglas W. Strand"@en;
+  rdfs:label "Douglas Strand"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0746-927X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-5739-4923 a skos:Concept;
+  skos:prefLabel "Ari Karunamurthy"@en;
+  rdfs:label "Ari Karunamurthy"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-5739-4923";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0571-0285 a skos:Concept;
+  skos:prefLabel "Gail Deutsch"@en;
+  rdfs:label "Gail Deutsch"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0571-0285";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-9185-3994 a skos:Concept;
+  skos:prefLabel "Gloria Pryhuber"@en;
+  rdfs:label "Gloria Pryhuber"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-9185-3994";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-1134-8585 a skos:Concept;
+  skos:prefLabel "Jonhan Ho"@en;
+  rdfs:label "Jonhan Ho"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-1134-8585";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9813-0433 a skos:Concept;
+  skos:prefLabel "Louis Falo"@en;
+  rdfs:label "Louis Falo"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-9813-0433";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7945-9620 a skos:Concept;
+  skos:prefLabel "Dusan Velickovic"@en;
+  rdfs:label "Dusan Velickovic"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7945-9620";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-1653-902X a skos:Concept;
+  skos:prefLabel "Eleni G. Jaswa"@en;
+  rdfs:label "Eleni Jaswa"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-1653-902X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-6095-2797 a skos:Concept;
+  skos:prefLabel "Eleonora Forte"@en;
+  rdfs:label "Eleonora Forte"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-6095-2797";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-6078-3321 a skos:Concept;
+  skos:prefLabel "Elizabeth Neumann"@en;
+  rdfs:label "Elizabeth Neumann"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-6078-3321";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-1411-0465 a skos:Concept;
+  skos:prefLabel "Ellie Pingry"@en;
+  rdfs:label "Ellie Pingry"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-1411-0465";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0284-8342 a skos:Concept;
+  skos:prefLabel "Eric H. Kim"@en;
+  rdfs:label "Eric Kim"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0284-8342";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-9115-9345 a skos:Concept;
+  skos:prefLabel "Erin Soon"@en;
+  rdfs:label "Erin Soon"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-9115-9345";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-4056-2695 a skos:Concept;
+  skos:prefLabel "Ernesto S. Nakayasu"@en;
+  rdfs:label "Ernesto Nakayasu"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-4056-2695";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-1799-4457 a skos:Concept;
+  skos:prefLabel "Esther Danenberg"@en;
+  rdfs:label "Esther Danenberg"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-1799-4457";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-9195-7478 a skos:Concept;
+  skos:prefLabel "Evan Murray"@en;
+  rdfs:label "Evan Murray"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-9195-7478";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-4745-8129 a skos:Concept;
+  skos:prefLabel "Fatma Ayaloglu Butun"@en;
+  rdfs:label "Fatma Butun"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-4745-8129";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2308-3649 a skos:Concept;
+  skos:prefLabel "Fei Chen"@en;
+  rdfs:label "Fei Chen"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2308-3649";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-3052-0253 a skos:Concept;
+  skos:prefLabel "Gabrielle Rizzuto"@en;
+  rdfs:label "Gabrielle Rizzuto"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-3052-0253";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-0185-8861 a skos:Concept;
+  skos:prefLabel "Gary D. Bader"@en;
+  rdfs:label "Gary Bader"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-0185-8861";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-0478-8520 a skos:Concept;
+  skos:prefLabel "Geremy C. Clair"@en;
+  rdfs:label "Geremy Clair"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-0478-8520";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9527-8723 a skos:Concept;
+  skos:prefLabel "Gonzalo Sapisochin"@en;
+  rdfs:label "Gonzalo Sapisochin"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-9527-8723";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9309-9297 a skos:Concept;
+  skos:prefLabel "Gordon Keller"@en;
+  rdfs:label "Gordon Keller"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-9309-9297";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-3748-5518 a skos:Concept;
+  skos:prefLabel "Gregory T. Booth"@en;
+  rdfs:label "Gregory Booth"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-3748-5518";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-4265-7492 a skos:Concept;
+  skos:prefLabel "Haichun Yang"@en;
+  rdfs:label "Haichun Yang"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-4265-7492";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7815-2387 a skos:Concept;
+  skos:prefLabel "Hannah Swahn"@en;
+  rdfs:label "Hannah Swahn"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7815-2387";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0374-2283 a skos:Concept;
+  skos:prefLabel "Harry S. Nick"@en;
+  rdfs:label "Harry Nick"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0374-2283";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9453-0747 a skos:Concept;
+  skos:prefLabel "Heidie Huyck"@en;
+  rdfs:label "Heidie Huyck"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-9453-0747";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-3598-0219 a skos:Concept;
+  skos:prefLabel "Hua Tian"@en;
+  rdfs:label "Hua Tian"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-3598-0219";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9668-044X a skos:Concept;
+  skos:prefLabel "Hunter B. Hakimian"@en;
+  rdfs:label "Hunter Hakimian"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-9668-044X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-4519-5684 a skos:Concept;
+  skos:prefLabel "Ian Simms"@en;
+  rdfs:label "Ian Simms"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-4519-5684";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-5823-1026 a skos:Concept;
+  skos:prefLabel "Ilan Gold"@en;
+  rdfs:label "Ilan Gold"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-5823-1026";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-8460-8229 a skos:Concept;
+  skos:prefLabel "Inna Averbukh"@en;
+  rdfs:label "Inna Averbukh"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-8460-8229";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-5124-9883 a skos:Concept;
+  skos:prefLabel "Ivan Linares"@en;
+  rdfs:label "Ivan Linares"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-5124-9883";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9033-3623 a skos:Concept;
+  skos:prefLabel "James Fulcher"@en;
+  rdfs:label "James Fulcher"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-9033-3623";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8594-9888 a skos:Concept;
+  skos:prefLabel "James Webber"@en;
+  rdfs:label "James Webber"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8594-9888";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-6665-6596 a skos:Concept;
+  skos:prefLabel "James Williams"@en;
+  rdfs:label "James Williams"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-6665-6596";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-4739-2166 a skos:Concept;
+  skos:prefLabel "Jamie Allen"@en;
+  rdfs:label "Jamie Allen"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-4739-2166";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-9800-9251 a skos:Concept;
+  skos:prefLabel "Jason Brant"@en;
+  rdfs:label "Jason Brant"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-9800-9251";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-0640-7277 a skos:Concept;
+  skos:prefLabel "Jason E. Fish"@en;
+  rdfs:label "Jason Fish"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-0640-7277";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-1516-1865 a skos:Concept;
+  skos:prefLabel "Jay Shendure"@en;
+  rdfs:label "Jay Shendure"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-1516-1865";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9699-0931 a skos:Concept;
+  skos:prefLabel "Jeannie M Camarillo"@en;
+  rdfs:label "Jeannie Camarillo"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-9699-0931";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8977-6590 a skos:Concept;
+  skos:prefLabel "Jeff C. Liu"@en;
+  rdfs:label "Jeff Liu"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8977-6590";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-3067-1238 a skos:Concept;
+  skos:prefLabel "Jennifer L. Harvey"@en;
+  rdfs:label "Jennifer Harvey"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-3067-1238";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-8928-741X a skos:Concept;
+  skos:prefLabel "Jerelyn A. Nick"@en;
+  rdfs:label "Jerelyn Nick"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-8928-741X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-5903-2291 a skos:Concept;
+  skos:prefLabel "Jesus Aponte"@en;
+  rdfs:label "Jesus Aponte"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-5903-2291";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-4109-7710 a skos:Concept;
+  skos:prefLabel "Jilong Li"@en;
+  rdfs:label "Jilong Li"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-4109-7710";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-7792-3749 a skos:Concept;
+  skos:prefLabel "Jina Yun"@en;
+  rdfs:label "Jina Yun"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-7792-3749";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-5328-0451 a skos:Concept;
+  skos:prefLabel "Joanne Chan"@en;
+  rdfs:label "Joanne Chan"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-5328-0451";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9961-7673 a skos:Concept;
+  skos:prefLabel "John Hickey"@en;
+  rdfs:label "John Hickey"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-9961-7673";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-9949-1123 a skos:Concept;
+  skos:prefLabel "Jonah Langlieb"@en;
+  rdfs:label "Jonah Langlieb"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-9949-1123";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-9580-3951 a skos:Concept;
+  skos:prefLabel "Joseph Gaut"@en;
+  rdfs:label "Joseph Gaut"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-9580-3951";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0776-2695 a skos:Concept;
+  skos:prefLabel "Juan Echeverri"@en;
+  rdfs:label "Juan Echeverri"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0776-2695";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-4533-9644 a skos:Concept;
+  skos:prefLabel "Julia Laskin"@en;
+  rdfs:label "Julia Laskin"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-4533-9644";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2620-4928 a skos:Concept;
+  skos:prefLabel "Justin Manuel"@en;
+  rdfs:label "Justin Manuel"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2620-4928";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8458-1364 a skos:Concept;
+  skos:prefLabel "Karol Balderrama"@en;
+  rdfs:label "Karol Balderrama"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8458-1364";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0135-7859 a skos:Concept;
+  skos:prefLabel "Katelyn Flowers"@en;
+  rdfs:label "Katelyn Flowers"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0135-7859";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-3487-7199 a skos:Concept;
+  skos:prefLabel "Kavya Sharman"@en;
+  rdfs:label "Kavya Sharman"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-3487-7199";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9678-5161 a skos:Concept;
+  skos:prefLabel "Kevin Contrepois"@en;
+  rdfs:label "Kevin Contrepois"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-9678-5161";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-1669-7837 a skos:Concept;
+  skos:prefLabel "Kevin Jooss"@en;
+  rdfs:label "Kevin Jooss"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-1669-7837";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-3524-9776 a skos:Concept;
+  skos:prefLabel "Kevin Zemaitis"@en;
+  rdfs:label "Kevin Zemaitis"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-3524-9776";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8141-064X a skos:Concept;
+  skos:prefLabel "Kimberly Y. Conklin"@en;
+  rdfs:label "Kimberly Conklin"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8141-064X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-0767-4617 a skos:Concept;
+  skos:prefLabel "Kristina Paul"@en;
+  rdfs:label "Kristina Paul"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-0767-4617";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-1088-698X a skos:Concept;
+  skos:prefLabel "Kristy Conlon"@en;
+  rdfs:label "Kristy Conlon"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-1088-698X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-6799-6303 a skos:Concept;
+  skos:prefLabel "Leeat Keren"@en;
+  rdfs:label "Leeat Keren"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-6799-6303";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7405-3146 a skos:Concept;
+  skos:prefLabel "Leonor Tideman"@en;
+  rdfs:label "Leonor Tideman"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7405-3146";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-9740-8261 a skos:Concept;
+  skos:prefLabel "Lewis Y. Liu"@en;
+  rdfs:label "Lewis Liu"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-9740-8261";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-8442-8674 a skos:Concept;
+  skos:prefLabel "Lihua Jiang"@en;
+  rdfs:label "Lihua Jiang"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-8442-8674";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-9143-6509 a skos:Concept;
+  skos:prefLabel "Lisa Lowery"@en;
+  rdfs:label "Lisa Lowery"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-9143-6509";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7524-8260 a skos:Concept;
+  skos:prefLabel "Liz McDonough"@en;
+  rdfs:label "Liz McDonough"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7524-8260";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-1884-6405 a skos:Concept;
+  skos:prefLabel "Lukasz Migas"@en;
+  rdfs:label "Lukasz Migas"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-1884-6405";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-9515-3493 a skos:Concept;
+  skos:prefLabel "Madeline E. Colley"@en;
+  rdfs:label "Madeline Colley"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-9515-3493";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2760-0586 a skos:Concept;
+  skos:prefLabel "Madhurima Kaushal"@en;
+  rdfs:label "Madhurima Kaushal"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2760-0586";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-4331-2202 a skos:Concept;
+  skos:prefLabel "Maigan Brusko"@en;
+  rdfs:label "Maigan Brusko"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-4331-2202";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-0589-1757 a skos:Concept;
+  skos:prefLabel "Manxi Yang"@en;
+  rdfs:label "Manxi Yang"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-0589-1757";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-4912-8059 a skos:Concept;
+  skos:prefLabel "Marc Bosse"@en;
+  rdfs:label "Marc Bosse"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-4912-8059";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-7250-3569 a skos:Concept;
+  skos:prefLabel "Marda L. Jorgensen"@en;
+  rdfs:label "Marda Jorgensen"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-7250-3569";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8489-4782 a skos:Concept;
+  skos:prefLabel "Mark A. Atkinson"@en;
+  rdfs:label "Mark Atkinson"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8489-4782";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7926-1673 a skos:Concept;
+  skos:prefLabel "Mark deCaestecker"@en;
+  rdfs:label "Mark deCaestecker"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7926-1673";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-3003-874X a skos:Concept;
+  skos:prefLabel "Mark S. Keller"@en;
+  rdfs:label "Mark Keller"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-3003-874X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-4326-0887 a skos:Concept;
+  skos:prefLabel "Markus Selzner"@en;
+  rdfs:label "Markus Selzner"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-4326-0887";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2874-1807 a skos:Concept;
+  skos:prefLabel "Masato Hoshi"@en;
+  rdfs:label "Masato Hoshi"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2874-1807";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0965-9528 a skos:Concept;
+  skos:prefLabel "Mathew Ellenberger"@en;
+  rdfs:label "Mathew Ellenberger"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0965-9528";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-1909-9739 a skos:Concept;
+  skos:prefLabel "Matt van de Rjin"@en;
+  rdfs:label "Matt van de Rjin"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-1909-9739";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-1210-7169 a skos:Concept;
+  skos:prefLabel "Matthew E. Monroe"@en;
+  rdfs:label "Matthew Monroe"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-1210-7169";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-5914-0081 a skos:Concept;
+  skos:prefLabel "Maya Brewer"@en;
+  rdfs:label "Maya Brewer"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-5914-0081";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-1602-2082 a skos:Concept;
+  skos:prefLabel "Melissa A. Farrow"@en;
+  rdfs:label "Melissa Farrow"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-1602-2082";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-2483-4216 a skos:Concept;
+  skos:prefLabel "Merissa Olmer"@en;
+  rdfs:label "Merissa Olmer"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-2483-4216";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-4015-3066 a skos:Concept;
+  skos:prefLabel "Michael D. Wilson"@en;
+  rdfs:label "Michael Wilson"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-4015-3066";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-7841-3740 a skos:Concept;
+  skos:prefLabel "Michael L. Cheng"@en;
+  rdfs:label "Michael Cheng"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-7841-3740";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-2003-2865 a skos:Concept;
+  skos:prefLabel "Michelle C. Daniel"@en;
+  rdfs:label "Michelle Daniel"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-2003-2865";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-9138-4913 a skos:Concept;
+  skos:prefLabel "Mina Ogawa"@en;
+  rdfs:label "Mina Ogawa"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-9138-4913";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-1616-8353 a skos:Concept;
+  skos:prefLabel "Minyi Shi"@en;
+  rdfs:label "Minyi Shi"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-1616-8353";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-3575-3224 a skos:Concept;
+  skos:prefLabel "Mowei Zhou"@en;
+  rdfs:label "Mowei Zhou"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-3575-3224";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8464-3799 a skos:Concept;
+  skos:prefLabel "Mushfeqa Iqfath"@en;
+  rdfs:label "Mushfeqa Iqfath"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8464-3799";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0064-1583 a skos:Concept;
+  skos:prefLabel "Nathan Patterson"@en;
+  rdfs:label "Nathan Patterson"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0064-1583";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-9435-2597 a skos:Concept;
+  skos:prefLabel "Nazia Selzner"@en;
+  rdfs:label "Nazia Selzner"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-9435-2597";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-5964-5899 a skos:Concept;
+  skos:prefLabel "Neil Winegarden"@en;
+  rdfs:label "Neil Winegarden"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-5964-5899";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-5267-7289 a skos:Concept;
+  skos:prefLabel "Nicholas Khuu"@en;
+  rdfs:label "Nicholas Khuu"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-5267-7289";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-2451-0633 a skos:Concept;
+  skos:prefLabel "Nico Pierson"@en;
+  rdfs:label "Nico Pierson"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-2451-0633";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-3027-8989 a skos:Concept;
+  skos:prefLabel "Nicolas Damon"@en;
+  rdfs:label "Nicolas Damon"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-3027-8989";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-0327-8297 a skos:Concept;
+  skos:prefLabel "Nils Gehlenborg"@en;
+  rdfs:label "Nils Gehlenborg"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-0327-8297";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-6410-0682 a skos:Concept;
+  skos:prefLabel "Nina Dar"@en;
+  rdfs:label "Nina Dar"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-6410-0682";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-7836-4379 a skos:Concept;
+  skos:prefLabel "Noah Greenwald"@en;
+  rdfs:label "Noah Greenwald"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-7836-4379";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-1305-285X a skos:Concept;
+  skos:prefLabel "Nongluk Plongthongkum"@en;
+  rdfs:label "Nongluk Plongthongkum"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-1305-285X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-4272-1095 a skos:Concept;
+  skos:prefLabel "Oyedele Adeyi"@en;
+  rdfs:label "Oyedele Adeyi"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-4272-1095";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0985-3347 a skos:Concept;
+  skos:prefLabel "Padmaja Natarajan"@en;
+  rdfs:label "Padmaja Natarajan"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0985-3347";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-1321-4417 a skos:Concept;
+  skos:prefLabel "Paul Greig"@en;
+  rdfs:label "Paul Greig"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-1321-4417";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-6036-5875 a skos:Concept;
+  skos:prefLabel "Peter V. Kharchenko"@en;
+  rdfs:label "Peter Kharachenko"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-6036-5875";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2184-7238 a skos:Concept;
+  skos:prefLabel "Presha Rajbhandari"@en;
+  rdfs:label "Presha Rajbhandari"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2184-7238";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2798-919X a skos:Concept;
+  skos:prefLabel "Qiwen Hu"@en;
+  rdfs:label "Qiwen Hu"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2798-919X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-2232-7130 a skos:Concept;
+  skos:prefLabel "Raf Van de Plas"@en;
+  rdfs:label "Raf Van de Plas"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-2232-7130";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0349-235X a skos:Concept;
+  skos:prefLabel "Rafael Melani"@en;
+  rdfs:label "Rafael Melani"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0349-235X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-3658-5074 a skos:Concept;
+  skos:prefLabel "Rahul Gupta"@en;
+  rdfs:label "Rahul Gupta"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-3658-5074";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-1352-4378 a skos:Concept;
+  skos:prefLabel "Ravi Misra"@en;
+  rdfs:label "Ravi Misra"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-1352-4378";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8025-0883 a skos:Concept;
+  skos:prefLabel "Raymond C. Harris"@en;
+  rdfs:label "Raymond Harris"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8025-0883";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-1229-4897 a skos:Concept;
+  skos:prefLabel "Rebecca K. Seliga"@en;
+  rdfs:label "Rebecca Seliga"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-1229-4897";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-5859-3310 a skos:Concept;
+  skos:prefLabel "Richard M. Caprioli"@en;
+  rdfs:label "Richard Caprioli"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-5859-3310";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-1635-8675 a skos:Concept;
+  skos:prefLabel "Riza M. Daza"@en;
+  rdfs:label "Riza Daza"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-1635-8675";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7428-7647 a skos:Concept;
+  skos:prefLabel "Rosalie K. Chu"@en;
+  rdfs:label "Rosalie Chu"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7428-7647";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-7306-9186 a skos:Concept;
+  skos:prefLabel "Roxanne Chiu"@en;
+  rdfs:label "Roxanne Chiu"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-7306-9186";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-3957-8120 a skos:Concept;
+  skos:prefLabel "Ruben Casanova"@en;
+  rdfs:label "Ruben Casanova"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-3957-8120";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2406-5303 a skos:Concept;
+  skos:prefLabel "Ruiqi Jian"@en;
+  rdfs:label "Ruiqi Jian"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2406-5303";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-5779-8525 a skos:Concept;
+  skos:prefLabel "Rula Green-Gladden"@en;
+  rdfs:label "Rula Green-Gladden"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-5779-8525";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2684-7122 a skos:Concept;
+  skos:prefLabel "Sai W Chung"@en;
+  rdfs:label "Sai Chung"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2684-7122";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2804-127X a skos:Concept;
+  skos:prefLabel "Sanjay Jain"@en;
+  rdfs:label "Sanjay Jain"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2804-127X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7282-0487 a skos:Concept;
+  skos:prefLabel "Sanjay Srivatsan"@en;
+  rdfs:label "Sanjay Srivatsan"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7282-0487";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7512-4081 a skos:Concept;
+  skos:prefLabel "Sarah Urata"@en;
+  rdfs:label "Sarah Urata"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7512-4081";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-6105-6890 a skos:Concept;
+  skos:prefLabel "Seth W. Curlin"@en;
+  rdfs:label "Seth Curlin"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-6105-6890";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0897-2918 a skos:Concept;
+  skos:prefLabel "Shikhar Uttam"@en;
+  rdfs:label "Shikhar Uttam"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0897-2918";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-0118-0413 a skos:Concept;
+  skos:prefLabel "Shin Lin"@en;
+  rdfs:label "Shin Lin"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-0118-0413";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-4527-4764 a skos:Concept;
+  skos:prefLabel "Shinichiro Ogawa"@en;
+  rdfs:label "Shinichiro Ogawa"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-4527-4764";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0680-7652 a skos:Concept;
+  skos:prefLabel "Shirley Greenbaum"@en;
+  rdfs:label "Shirley Greenbaum"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0680-7652";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-3939-3561 a skos:Concept;
+  skos:prefLabel "Skyler Gordon"@en;
+  rdfs:label "Skyler Gordon"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-3939-3561";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-8036-1425 a skos:Concept;
+  skos:prefLabel "Sonya A. MacParland"@en;
+  rdfs:label "Sonya MacParland"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-8036-1425";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-2730-1482 a skos:Concept;
+  skos:prefLabel "Soumya Ghose"@en;
+  rdfs:label "Soumya Ghose"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-2730-1482";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-2244-6703 a skos:Concept;
+  skos:prefLabel "Stephanie Nevins"@en;
+  rdfs:label "Stephanie Nevins"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-2244-6703";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8034-7685 a skos:Concept;
+  skos:prefLabel "Stephen A. Fisher"@en;
+  rdfs:label "Stephen Fisher"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8034-7685";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-5490-2750 a skos:Concept;
+  skos:prefLabel "Steven Head"@en;
+  rdfs:label "Steven Head"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-5490-2750";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-4645-3614 a skos:Concept;
+  skos:prefLabel "Tarek El-Achkar"@en;
+  rdfs:label "Tarek El-Achkar"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-4645-3614";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2222-4630 a skos:Concept;
+  skos:prefLabel "Taruna Neelakantan"@en;
+  rdfs:label "Taruna Neelakantan"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2222-4630";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7122-4448 a skos:Concept;
+  skos:prefLabel "Thu Duong"@en;
+  rdfs:label "Thu Duong"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7122-4448";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-2809-3187 a skos:Concept;
+  skos:prefLabel "Tony Mondala"@en;
+  rdfs:label "Tony Mondala"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-2809-3187";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7694-5164 a skos:Concept;
+  skos:prefLabel "Trevor Manz"@en;
+  rdfs:label "Trevor Manz"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7694-5164";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7344-7207 a skos:Concept;
+  skos:prefLabel "Voislav Blagojevic"@en;
+  rdfs:label "Voislav Blagojevic"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7344-7207";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-5393-2827 a skos:Concept;
+  skos:prefLabel "Wei-Jun Qian"@en;
+  rdfs:label "Wei-Jun Qian"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-5393-2827";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-1059-5653 a skos:Concept;
+  skos:prefLabel "Weixiu Dong"@en;
+  rdfs:label "Weixiu Dong"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-1059-5653";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7876-5060 a skos:Concept;
+  skos:prefLabel "Winston Becker"@en;
+  rdfs:label "Winston Becker"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7876-5060";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-5891-3502 a skos:Concept;
+  skos:prefLabel "Xiangtang Li"@en;
+  rdfs:label "Xiangtang Li"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-5891-3502";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-8866-5223 a skos:Concept;
+  skos:prefLabel "Xin Wang"@en;
+  rdfs:label "Xin Wang"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-8866-5223";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-8124-0457 a skos:Concept;
+  skos:prefLabel "Yen-Chen Liao"@en;
+  rdfs:label "Yen-Chen Liao"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-8124-0457";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-0317-7608 a skos:Concept;
+  skos:prefLabel "Yiing Lin"@en;
+  rdfs:label "Yiing Lin"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-0317-7608";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-5416-0566 a skos:Concept;
+  skos:prefLabel "Ying Zhu"@en;
+  rdfs:label "Ying Zhu"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-5416-0566";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-6093-6001 a skos:Concept;
+  skos:prefLabel "Yousef Al-Kofahi"@en;
+  rdfs:label "Yousef Al-Kofahi"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-6093-6001";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-0523-6197 a skos:Concept;
+  skos:prefLabel "Yumi Kwon"@en;
+  rdfs:label "Yumi Kwon"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-0523-6197";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-3617-2472 a skos:Concept;
+  skos:prefLabel "Zumana Khair"@en;
+  rdfs:label "Zumana Khair"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-3617-2472";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2941-5771 a skos:Concept;
+  skos:prefLabel "Tianyang Xu"@en;
+  rdfs:label "Tianyang Xu"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2941-5771";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-5024-0278 a skos:Concept;
+  skos:prefLabel "Erik Nordgren"@en;
+  rdfs:label "Erik Nordgren"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-5024-0278";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-6116-5058 a skos:Concept;
+  skos:prefLabel "Jean G. Rosario"@en;
+  rdfs:label "Jean Rosario"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-6116-5058";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0009-0003-6552-821X a skos:Concept;
+  skos:prefLabel "Hieu Nguyen"@en;
+  rdfs:label "Hieu Nguyen"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0009-0003-6552-821X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0009-0005-2286-9078 a skos:Concept;
+  skos:prefLabel "Addie Johnston"@en;
+  rdfs:label "Addie Johnston"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0009-0005-2286-9078";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-0540-631X a skos:Concept;
+  skos:prefLabel "Athanasios Ploumakis"@en;
+  rdfs:label "Athanasios Ploumakis"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-0540-631X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0002-8849-808X a skos:Concept;
+  skos:prefLabel "Ioannis S. Vlachos"@en;
+  rdfs:label "Ioannis Vlachos"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0002-8849-808X";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0001-7677-8386 a skos:Concept;
+  skos:prefLabel "Kyu Sang Han"@en;
+  rdfs:label "Kyu Sang Han"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0001-7677-8386";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+orcid:0000-0003-2165-9456 a skos:Concept;
+  skos:prefLabel "Chenchen Zhu"@en;
+  rdfs:label "Chenchen Zhu"@en;
+  skos:broader vs:HRAVS_0000030;
+  skos:notation "0000-0003-2165-9456";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000016 a skos:Concept;
+  skos:prefLabel "Dataset Type"@en;
+  skos:definition "This is a set of controlled terms for different dataset types produced by the data providers."@en;
+  skos:notation "HRAVS:0000016";
+  skos:narrower vs:HRAVS_0000159, vs:HRAVS_0000160, vs:HRAVS_0000168, vs:HRAVS_0000172,
+    vs:HRAVS_0000187, vs:HRAVS_0000188, vs:HRAVS_0000194, vs:HRAVS_0000195, vs:HRAVS_0000196,
+    vs:HRAVS_0000197, vs:HRAVS_0000199, vs:HRAVS_0000200, vs:HRAVS_0000201, vs:HRAVS_0000202,
+    vs:HRAVS_0000203, vs:HRAVS_0000204, vs:HRAVS_0000205, vs:HRAVS_0000206, vs:HRAVS_0000207,
+    vs:HRAVS_0000208, vs:HRAVS_0000209, vs:HRAVS_0000210, vs:HRAVS_0000211, vs:HRAVS_0000212,
+    vs:HRAVS_0000213, vs:HRAVS_0000214, vs:HRAVS_0000215, vs:HRAVS_0000216, vs:HRAVS_0000217,
+    vs:HRAVS_0000218, vs:HRAVS_0000219, vs:HRAVS_0000220;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000155 a skos:Concept;
+  skos:prefLabel "3D Imaging Mass Cytometry"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000155";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000156 a skos:Concept;
+  skos:prefLabel "AF"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000156";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000157 a skos:Concept;
+  skos:prefLabel "Bulk ATAC-seq"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000157";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000158 a skos:Concept;
+  skos:prefLabel "Bulk RNA-seq"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000158";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000159 a skos:Concept;
+  skos:prefLabel "Cell DIVE"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000159";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000160 a skos:Concept;
+  skos:prefLabel "CODEX"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000160";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000161 a skos:Concept;
+  skos:prefLabel "Imaging Mass Cytometry"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000161";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000162 a skos:Concept;
+  skos:prefLabel "IMS Negative"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000162";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000163 a skos:Concept;
+  skos:prefLabel "IMS Positive"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000163";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000164 a skos:Concept;
+  skos:prefLabel "LC-MS (Metabolomics)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000164";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000165 a skos:Concept;
+  skos:prefLabel "LC-MS Bottom-Up"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000165";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000166 a skos:Concept;
+  skos:prefLabel "LC-MS Top-Down"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000166";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000167 a skos:Concept;
+  skos:prefLabel "LC-MS/MS (Label-free Proteomics)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000167";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000168 a skos:Concept;
+  skos:prefLabel "Light Sheet"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000168";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000169 a skos:Concept;
+  skos:prefLabel "MALDI-IMS"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000169";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000170 a skos:Concept;
+  skos:prefLabel "MIBI"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000170";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000171 a skos:Concept;
+  skos:prefLabel "MS (Shotgun Lipidomics)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000171";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000172 a skos:Concept;
+  skos:prefLabel "Multiplex Ion Beam Imaging"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000172";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000173 a skos:Concept;
+  skos:prefLabel "PAS Microscopy"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000173";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000174 a skos:Concept;
+  skos:prefLabel "sciATAC-seq"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000174";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000175 a skos:Concept;
+  skos:prefLabel "sciRNA-seq"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000175";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000176 a skos:Concept;
+  skos:prefLabel "scRNA-seq-10xGenomics"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000176";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000177 a skos:Concept;
+  skos:prefLabel "scRNA-seq-10xGenomics-v2"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000177";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000178 a skos:Concept;
+  skos:prefLabel "scRNA-seq-10xGenomics-v3"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000178";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000179 a skos:Concept;
+  skos:prefLabel "seqFISH"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000179";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000180 a skos:Concept;
+  skos:prefLabel "Slide-seq"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000180";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000181 a skos:Concept;
+  skos:prefLabel "SNARE-seq2"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000181";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000182 a skos:Concept;
+  skos:prefLabel "SNARE2-RNA-seq"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000182";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000183 a skos:Concept;
+  skos:prefLabel "snATAC-seq"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000183";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000184 a skos:Concept;
+  skos:prefLabel "snRNA-seq"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000184";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000185 a skos:Concept;
+  skos:prefLabel "snRNA-seq-10xGenomics-v3"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000185";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000186 a skos:Concept;
+  skos:prefLabel "TMT (Proteomics)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000186";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000187 a skos:Concept;
+  skos:prefLabel "Visium"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000187";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000188 a skos:Concept;
+  skos:prefLabel "RNAseq (Visium)"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000188";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000189 a skos:Concept;
+  skos:prefLabel "Whole Genome Sequencing"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000189";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000190 a skos:Concept;
+  skos:prefLabel "H&E Microscopy"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000190";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000191 a skos:Concept;
+  skos:prefLabel "LFB Microscopy"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000191";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000192 a skos:Concept;
+  skos:prefLabel "Trichrome Microscopy"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000192";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000194 a skos:Concept;
+  skos:prefLabel "LC-MS"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000194";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000195 a skos:Concept;
+  skos:prefLabel "HiFi-Slide"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000195";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000196 a skos:Concept;
+  skos:prefLabel "Imaging Mass Spectrometry"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000196";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000197 a skos:Concept;
+  skos:prefLabel "Histology"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000197";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000199 a skos:Concept;
+  skos:prefLabel "PhenoCycler"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000199";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000200 a skos:Concept;
+  skos:prefLabel "CyCIF"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000200";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000201 a skos:Concept;
+  skos:prefLabel "MALDI"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000201";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000202 a skos:Concept;
+  skos:prefLabel "SIMS"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000202";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000203 a skos:Concept;
+  skos:prefLabel "NanoDESI"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000203";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000204 a skos:Concept;
+  skos:prefLabel "DESI"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000204";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000205 a skos:Concept;
+  skos:prefLabel "Auto-fluorescence"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000205";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000206 a skos:Concept;
+  skos:prefLabel "Confocal"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000206";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000207 a skos:Concept;
+  skos:prefLabel "Thick section Multiphoton MxIF"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000207";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000208 a skos:Concept;
+  skos:prefLabel "Second Harmonic Generation (SHG)"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000208";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000209 a skos:Concept;
+  skos:prefLabel "Enhanced Stimulated Raman Spectroscopy (SRS)"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000209";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000210 a skos:Concept;
+  skos:prefLabel "ATACseq (bulk)"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000210";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000211 a skos:Concept;
+  skos:prefLabel "ATACseq (sc/sn)"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000211";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000212 a skos:Concept;
+  skos:prefLabel "RNAseq (bulk)"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000212";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000213 a skos:Concept;
+  skos:prefLabel "RNAseq (sc/sn)"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000213";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000214 a skos:Concept;
+  skos:prefLabel "RNAseq (GeoMx)"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000214";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000215 a skos:Concept;
+  skos:prefLabel "10X Multiome"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000215";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000216 a skos:Concept;
+  skos:prefLabel "GeoMx"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000216";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000217 a skos:Concept;
+  skos:prefLabel "Molecular Cartography"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000217";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000218 a skos:Concept;
+  skos:prefLabel "CosMx"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000218";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000219 a skos:Concept;
+  skos:prefLabel "Xenium"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000219";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000220 a skos:Concept;
+  skos:prefLabel "Resolve"@en;
+  skos:broader vs:HRAVS_0000016;
+  skos:notation "HRAVS:0000220";
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000017 a skos:Concept;
+  skos:prefLabel "Retired Concept"@en;
+  skos:definition "This is a set of controlled terms that have been retired or deprecated during the metadata specification development."@en;
+  skos:notation "HRAVS:0000017";
+  skos:narrower vs:HRAVS_0000109, vs:HRAVS_0000139, vs:HRAVS_0000119, vs:HRAVS_0000120,
+    vs:HRAVS_0000101, vs:HRAVS_0000145, vs:HRAVS_0000114, vs:HRAVS_0000129, vs:HRAVS_0000100,
+    vs:HRAVS_0000121, vs:HRAVS_0000155, vs:HRAVS_0000156, vs:HRAVS_0000157, vs:HRAVS_0000158,
+    vs:HRAVS_0000161, vs:HRAVS_0000162, vs:HRAVS_0000163, vs:HRAVS_0000164, vs:HRAVS_0000165,
+    vs:HRAVS_0000166, vs:HRAVS_0000167, vs:HRAVS_0000169, vs:HRAVS_0000170, vs:HRAVS_0000171,
+    vs:HRAVS_0000173, vs:HRAVS_0000174, vs:HRAVS_0000175, vs:HRAVS_0000176, vs:HRAVS_0000177,
+    vs:HRAVS_0000178, vs:HRAVS_0000179, vs:HRAVS_0000180, vs:HRAVS_0000181, vs:HRAVS_0000182,
+    vs:HRAVS_0000183, vs:HRAVS_0000184, vs:HRAVS_0000185, vs:HRAVS_0000186, vs:HRAVS_0000189,
+    vs:HRAVS_0000190, vs:HRAVS_0000191, vs:HRAVS_0000192, vs:HRAVS_0000193, vs:HRAVS_0000142,
+    vs:HRAVS_0000146, vs:HRAVS_0000102;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs>;
+  skos:topConceptOf <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000193 a skos:Concept;
+  skos:prefLabel "Nucleic acid and protein"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000193";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000142 a skos:Concept;
+  skos:prefLabel "OCT embedded cryoprotected (sucrose)"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000142";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000146 a skos:Concept;
+  skos:prefLabel "PFA fixed frozen OCT"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000146";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
+
+vs:HRAVS_0000102 a skos:Concept;
+  skos:prefLabel "Sucrose cryoprotection solution"@en;
+  skos:broader vs:HRAVS_0000017;
+  skos:notation "HRAVS:0000102";
+  owl:deprecated "true"@en;
+  skos:inScheme <https://purl.humanatlas.io/vocab/hravs> .
